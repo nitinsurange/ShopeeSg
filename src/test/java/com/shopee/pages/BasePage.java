@@ -21,6 +21,7 @@ public class BasePage {
 	protected static AppiumDriver driver;
 
 	public void swipeLeft(@SuppressWarnings("rawtypes") AppiumDriver driver) {
+		
 		Dimension size = driver.manage().window().getSize();
 		int endx = (int) (size.width * 0.9);
 		int startx = (int) (size.width * 0.20);
@@ -35,6 +36,7 @@ public class BasePage {
 					.release();
 		}
 	}
+	
 	
 	public static void scrollUpToElement(MobileElement mobileElement, @SuppressWarnings("rawtypes") AppiumDriver driver) throws InterruptedException {
 		System.out.println("Checking scoll");

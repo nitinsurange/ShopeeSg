@@ -90,8 +90,9 @@ public class ShopeeSgPage extends BasePage {
     
  public void SwipeLeftuntilstrtbutton() {
 	 for(int i=0;i<=2;i++){  
-        swipeLeft(driver);
-	 } 
+			new AndroidTouchAction(driver).press(PointOption.point(1030, 1464))
+			.waitAction(WaitOptions.waitOptions(Duration.ofSeconds(2))).moveTo(PointOption.point(80, 1428))
+			.release();	 } 
 	 }
     
     public void clickonStartButton() {

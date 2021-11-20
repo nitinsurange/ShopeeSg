@@ -28,7 +28,7 @@ public class Shopee_MainSteps {
 
 	@Given("^user lanuch Shopee SG app$")
 	public void user_lanuch_Shopee_SG_app() throws Throwable {
-	
+	Thread.sleep(5000);
 	}
 
 	@Then("^user Swipe through all tutorial screens and tap on START button$")
@@ -45,7 +45,7 @@ public class Shopee_MainSteps {
 
 	@Then("^Dismiss the Add popup in landing screen$")
 	public void dismiss_the_Add_popup_in_landing_screen() throws Throwable {
-		shopee.closeAddPopUp();
+//		shopee.closeAddPopUp();
 	}
 
 	@Then("^user Clicks on Shopee Mall button from bottom navbar$")
