@@ -1,4 +1,4 @@
-package com.shopee.Register;
+package com.shopee.Assignment;
 
 import com.shopee.configs.Hooks;
 import com.shopee.pages.BasePage;
@@ -21,7 +21,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
-public class Register extends BasePage {
+public class Shopee extends BasePage {
 
     @SuppressWarnings("rawtypes")
 	public AppiumDriver driver;
@@ -29,7 +29,7 @@ public class Register extends BasePage {
      *    Constructor initializes screen elements
      */
 
-    public Register()
+    public Shopee()
     {
         this.driver = new Hooks().getDriver();
         PageFactory.initElements(new AppiumFieldDecorator(this.driver),this);

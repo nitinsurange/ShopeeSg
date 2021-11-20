@@ -7,7 +7,7 @@ import java.util.Calendar;
 import java.util.concurrent.TimeUnit;
 
 import com.cucumber.listener.Reporter;
-import com.shopee.Register.Register;
+import com.shopee.Assignment.Shopee;
 import com.shopee.utils.CapsJsonParser;
 
 import cucumber.api.Scenario;
@@ -71,7 +71,7 @@ public class Hooks {
             setDriver();
         }
         else
-            if(!new Register().checkForSignupPage())
+            if(!new Shopee().checkForSignupPage())
             {
                 setDriver();
             }
