@@ -20,6 +20,22 @@ import java.time.Duration;
 public class BasePage {
 	protected static AppiumDriver driver;
 
+	public void swipeLeft(@SuppressWarnings("rawtypes") AppiumDriver driver) {
+		Dimension size = driver.manage().window().getSize();
+		int endx = (int) (size.width * 0.9);
+		int startx = (int) (size.width * 0.20);
+		int starty = size.height / 2;
+		if (System.getProperty("platform").equalsIgnoreCase("android")) {
+			new AndroidTouchAction(driver).press(PointOption.point(startx, starty))
+					.waitAction(WaitOptions.waitOptions(Duration.ofSeconds(2))).moveTo(PointOption.point(endx, starty))
+					.release();
+		} else {
+			new IOSTouchAction(driver).press(PointOption.point(startx, starty))
+					.waitAction(WaitOptions.waitOptions(Duration.ofSeconds(2))).moveTo(PointOption.point(endx, starty))
+					.release();
+		}
+	}
+	
 	public static void scrollUpToElement(MobileElement mobileElement, @SuppressWarnings("rawtypes") AppiumDriver driver) throws InterruptedException {
 		System.out.println("Checking scoll");
 		int count = 0;

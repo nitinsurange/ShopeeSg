@@ -33,37 +33,40 @@ public class Shopee_MainSteps {
 
 	@Then("^user Swipe through all tutorial screens and tap on START button$")
 	public void user_Swipe_through_all_tutorial_screens_and_tap_on_START_button() throws Throwable {
-	
+		shopee= new ShopeeSgPage();
+		shopee.SwipeLeftuntilstrtbutton();
+		shopee.clickonStartButton();
 	}
 
 	@Given("^user Allow permission for location if prompted$")
 	public void user_Allow_permission_for_location_if_prompted() throws Throwable {
-	
+		shopee.clickonAllowPermissions();
 	}
 
 	@Then("^Dismiss the Add popup in landing screen$")
 	public void dismiss_the_Add_popup_in_landing_screen() throws Throwable {
-	 
+		shopee.closeAddPopUp();
 	}
 
 	@Then("^user Clicks on Shopee Mall button from bottom navbar$")
 	public void user_Clicks_on_Shopee_Mall_button_from_bottom_navbar() throws Throwable {
-	   
+		shopee.clickonshopeemall();
 	}
 
 	@Then("^user Clicks on Mobile and Gadgets from top header menu$")
 	public void user_Clicks_on_Mobile_and_Gadgets_from_top_header_menu() throws Throwable {
-	
+		shopee.DropDownbuttonShopeemallpage();
+		shopee.ClickonmobileGadjets();
 	}
 
 	@Then("^user Clicks on See All for Trending Shops$")
 	public void user_Clicks_on_See_All_for_Trending_Shops() throws Throwable {
-	    
+		shopee.ClickonSeeAll();
 	}
 
 	@Then("^Swipe up and select Samsung then get the last active statusshop rating and Followers$")
 	public void swipe_up_and_select_Samsung_then_get_the_last_active_statusshop_rating_and_Followers() throws Throwable {
-	   
+		shopee.SwipeUpandClickonSamsungoption();
 	}
 
 	@Then("^user Taps on Filter  then select Rating  as (\\d+) Stars & Up  Condition as New and Prices Range as Min (\\d+) & Max (\\d+)$")

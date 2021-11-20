@@ -88,6 +88,11 @@ public class ShopeeSgPage extends BasePage {
         }
     }
     
+ public void SwipeLeftuntilstrtbutton() {
+	 for(int i=0;i<=2;i++){  
+        swipeLeft(driver);
+	 } 
+	 }
     
     public void clickonStartButton() {
     	
@@ -95,6 +100,12 @@ public class ShopeeSgPage extends BasePage {
     	clickButton(startbutton, driver);
     }
    
+  public void clickonAllowPermissions() {
+    	
+    	waitForVisibilityOf(allowpermissions, driver);
+    	clickButton(allowpermissions, driver);
+    }
+  
     public void clickonshopeemall() {
     	
     	waitForVisibilityOf(shopeemall, driver);
