@@ -89,8 +89,50 @@ public class ShopeeSgPage extends BasePage {
     }
     
     
+    public void clickonStartButton() {
+    	
+    	waitForVisibilityOf(startbutton, driver);
+    	clickButton(startbutton, driver);
+    }
    
+    public void clickonshopeemall() {
+    	
+    	waitForVisibilityOf(shopeemall, driver);
+    	clickButton(shopeemall, driver);
+    }
     
- 
     
+  public void DropDownbuttonShopeemallpage() {
+  	
+  	waitForVisibilityOf(dropdownshopeemall, driver);
+  	clickButton(dropdownshopeemall, driver);
+  }
+    
+  public void closeAddPopUp() {
+  	
+  	waitForVisibilityOf(closeaddpopup, driver);
+  	clickButton(closeaddpopup, driver);
+  }
+  
+  public void ClickonmobileGadjets() {
+  	
+  	waitForVisibilityOf(mobileandgadjets, driver);
+  	clickButton(mobileandgadjets, driver);
+  }
+  
+  
+  public void ClickonSeeAll() {
+	  	
+	  	waitForVisibilityOf(seeall, driver);
+	  	clickButton(seeall, driver);
+	  }
+	  
+  public void SwipeUpandClickonSamsungoption() throws InterruptedException {
+	  	
+	  	
+	  	scrollUpToElement(samsung, driver);
+	  	waitForVisibilityOf(samsung, driver);
+	  	clickButton(samsung, driver);
+	  }
+  
 }
