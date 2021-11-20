@@ -2,7 +2,7 @@
  Feature: Mobile App automation assignment
 
 
-  Background: Coindcx
+  Background: Shopee SG Assignment
 
   @ShopeeAssigment 
   Scenario Outline: Automate the Signup flow covering positive scenarios
