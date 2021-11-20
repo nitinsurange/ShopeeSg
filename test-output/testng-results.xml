@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="19096" started-at="2021-11-20T08:57:00Z" finished-at="2021-11-20T08:57:19Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="19096" started-at="2021-11-20T08:57:00Z" finished-at="2021-11-20T08:57:19Z">
+      <class name="com.shopee.runner.RunCukesTest">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.shopee.runner.RunCukesTest@3d680b5a]" name="setUpClass" is-config="true" duration-ms="303" started-at="2021-11-20T08:57:00Z" finished-at="2021-11-20T08:57:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.shopee.runner.RunCukesTest@3d680b5a]" name="feature" duration-ms="17523" started-at="2021-11-20T08:57:00Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2021-11-20T08:57:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mobile App automation assignment]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.shopee.runner.RunCukesTest@3d680b5a]" name="tearDownClass" is-config="true" duration-ms="623" started-at="2021-11-20T08:57:18Z" finished-at="2021-11-20T08:57:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method status="PASS" signature="stopServer()[pri:0, instance:com.shopee.runner.RunCukesTest@3d680b5a]" name="stopServer" is-config="true" duration-ms="536" started-at="2021-11-20T08:57:19Z" finished-at="2021-11-20T08:57:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopServer -->
+        <test-method status="PASS" signature="generateExtentReport()[pri:0, instance:com.shopee.runner.RunCukesTest@3d680b5a]" name="generateExtentReport" is-config="true" duration-ms="7" started-at="2021-11-20T08:57:19Z" finished-at="2021-11-20T08:57:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateExtentReport -->
+      </class> <!-- com.shopee.runner.RunCukesTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

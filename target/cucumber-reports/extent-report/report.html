@@ -47,7 +47,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Aug 20, 2021 04:21:44 AM</span>
+                    <span class='label suite-start-time blue darken-3'>Nov 20, 2021 02:27:00 PM</span>
 				</a>
 			</li>
 			<li>
@@ -85,12 +85,7 @@
 					<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@SignUphappyflowuntilOtpScreen</a></li>
-					<li><a href='#'>@CoinDcx</a></li>
-					<li><a href='#'>@positivescenario</a></li>
-					<li><a href='#'>@NegstiveScenarioforfirstsignupscreenemptyfields</a></li>
-					<li><a href='#'>@NegstiveScenarioforSecondsignupscreenemptyfields</a></li>
-					<li><a href='#'>@markets</a></li>
+					<li><a href='#'>@ShopeeAssigment</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -153,7 +148,7 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>4</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -168,7 +163,7 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>47</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>15</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -188,12 +183,12 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Mobile App automation assignment</span>
-						<span class='test-time'>Aug 20, 2021 04:21:44 AM</span>
+						<span class='test-time'>Nov 20, 2021 02:27:01 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenariooutline node' test-id='2' status='pass'>
-	<span class='duration right label'>0h 0m 30s+631ms</span>
+	<span class='duration right label'>0h 0m 17s+260ms</span>
 	<div class='desc'>
 		<b>ScenarioOutline</b>
 		<span class="desc-text">Automate the Signup flow covering positive scenarios</span>
@@ -201,9 +196,7 @@
 	<ul class='steps'>
 		<li test-id='3' class='node scenario pass' status='pass'>
 			<div class='category-list'>
-				<span class='category label white-text'>@SignUphappyflowuntilOtpScreen</span>
-				<span class='category label white-text'>@CoinDcx</span>
-				<span class='category label white-text'>@positivescenario</span>
+				<span class='category label white-text'>@ShopeeAssigment</span>
 			</div>
 			
 			<b>Scenario</b>
@@ -212,257 +205,63 @@
 			
 				<ul class='steps'>
 					<li test-id='4' class='node given pass' status='pass'><b>Given</b>
-						<span class="bdd-step-name">Given user close the banner once app launch</span>
+						<span class="bdd-step-name">Given user lanuch Shopee SG app</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='5' class='node given pass' status='pass'><b>Given</b>
-						<span class="bdd-step-name">Given User navigates to coinDcx signup screen.</span>
+					<li test-id='5' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then user Swipe through all tutorial screens and tap on START button</span>
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='6' class='node given pass' status='pass'><b>Given</b>
-						<span class="bdd-step-name">Given user verify the Home Screen of CoinDcx pro</span>
+						<span class="bdd-step-name">Given user Allow permission for location if prompted</span>
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='7' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then user click on register button and verify the sign up screen page</span>
+						<span class="bdd-step-name">Then Dismiss the Add popup in landing screen</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='8' class='node given pass' status='pass'><b>Given</b>
-						<span class="bdd-step-name">Given User enters th"Nitin" in firstname textfield</span>
+					<li test-id='8' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then user Clicks on Shopee Mall button from bottom navbar</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='9' class='node given pass' status='pass'><b>Given</b>
-						<span class="bdd-step-name">Given User enters the "Surange" in lastname textfield</span>
+					<li test-id='9' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then user Clicks on Mobile and Gadgets from top header menu</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='10' class='node given pass' status='pass'><b>Given</b>
-						<span class="bdd-step-name">Given User enters the "testnitinhlb@gmail.com" in email textfield</span>
+					<li test-id='10' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then user Clicks on See All for Trending Shops</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='11' class='node given pass' status='pass'><b>Given</b>
-						<span class="bdd-step-name">Given User enters the "CoinDcx123" in password textfield</span>
+					<li test-id='11' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Swipe up and select Samsung then get the last active statusshop rating and Followers</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='12' class='node when pass' status='pass'><b>When</b>
-						<span class="bdd-step-name">When user clicks on the  NEXT button to proceed</span>
+					<li test-id='12' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then user Taps on Filter  then select Rating  as 4 Stars & Up  Condition as New and Prices Range as Min 500 & Max 2000</span>
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='13' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then user will navigate to second signup page which include phone number, referral code and country fields</span>
+						<span class="bdd-step-name">Then user Clicks on Apply filter</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='14' class='node given pass' status='pass'><b>Given</b>
-						<span class="bdd-step-name">Given User enters the "+91" in Country textfield</span>
+					<li test-id='14' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then user Gets the Max priced product from list and Click on the product</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='15' class='node given pass' status='pass'><b>Given</b>
-						<span class="bdd-step-name">Given User enters the "9860423571" in PhoneNumber textfield</span>
+					<li test-id='15' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then user Swipe left/right on the image preview until the pagination value reaches last page respectively</span>
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='16' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then user cliks on Sign up button</span>
+						<span class="bdd-step-name">Then Get the product rating and shipping fee</span>
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='17' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then user navigates to OTP verification screen</span>
+						<span class="bdd-step-name">Then Swipe up and Click on Sell All for From the Same Shop Similar Products</span>
 							<div class='pre'>passed</div>
 					</li>
-				</ul>
-		</li>
-	</ul>
-</div>
-<div class='scenariooutline node' test-id='18' status='pass'>
-	<span class='duration right label'>0h 0m 34s+158ms</span>
-	<div class='desc'>
-		<b>ScenarioOutline</b>
-		<span class="desc-text">Automate the Signup flow covering Negative scenarios</span>
-	</div>
-	<ul class='steps'>
-		<li test-id='19' class='node scenario pass' status='pass'>
-			<div class='category-list'>
-				<span class='category label white-text'>@CoinDcx</span>
-				<span class='category label white-text'>@NegstiveScenarioforfirstsignupscreenemptyfields</span>
-			</div>
-			
-			<b>Scenario</b>
-			
-			<span class="bdd-step-name">Automate the Signup flow covering Negative scenarios</span>
-			
-				<ul class='steps'>
-					<li test-id='20' class='node given pass' status='pass'><b>Given</b>
-						<span class="bdd-step-name">Given user close the banner once app launch</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='21' class='node given pass' status='pass'><b>Given</b>
-						<span class="bdd-step-name">Given User navigates to coinDcx signup screen.</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='22' class='node given pass' status='pass'><b>Given</b>
-						<span class="bdd-step-name">Given user verify the Home Screen of CoinDcx pro</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='23' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then user click on register button and verify the sign up screen page</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='24' class='node when pass' status='pass'><b>When</b>
-						<span class="bdd-step-name">When user clicks on the  NEXT button to proceed</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='25' class='node when pass' status='pass'><b>When</b>
-						<span class="bdd-step-name">When user clicks on the  NEXT button to proceed</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='26' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then user verify error message for first name text field.</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='27' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then user verify error message for last name text field.</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='28' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then user verify error message for email text field.</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='29' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then user verify error message for password text field.</span>
-							<div class='pre'>passed</div>
-					</li>
-				</ul>
-		</li>
-	</ul>
-</div>
-<div class='scenariooutline node' test-id='30' status='pass'>
-	<span class='duration right label'>0h 0m 38s+870ms</span>
-	<div class='desc'>
-		<b>ScenarioOutline</b>
-		<span class="desc-text">Market screen</span>
-	</div>
-	<ul class='steps'>
-		<li test-id='31' class='node scenario pass' status='pass'>
-			<div class='category-list'>
-				<span class='category label white-text'>@CoinDcx</span>
-				<span class='category label white-text'>@NegstiveScenarioforSecondsignupscreenemptyfields</span>
-			</div>
-			
-			<b>Scenario</b>
-			
-			<span class="bdd-step-name">Market screen</span>
-			
-				<ul class='steps'>
-					<li test-id='32' class='node given pass' status='pass'><b>Given</b>
-						<span class="bdd-step-name">Given user close the banner once app launch</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='33' class='node given pass' status='pass'><b>Given</b>
-						<span class="bdd-step-name">Given User navigates to coinDcx signup screen.</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='34' class='node given pass' status='pass'><b>Given</b>
-						<span class="bdd-step-name">Given user verify the Home Screen of CoinDcx pro</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='35' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then user click on register button and verify the sign up screen page</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='36' class='node given pass' status='pass'><b>Given</b>
-						<span class="bdd-step-name">Given User enters th"Nitin" in firstname textfield</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='37' class='node given pass' status='pass'><b>Given</b>
-						<span class="bdd-step-name">Given User enters the "Surange" in lastname textfield</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='38' class='node given pass' status='pass'><b>Given</b>
-						<span class="bdd-step-name">Given User enters the "testnitinhlb@gmail.com" in email textfield</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='39' class='node given pass' status='pass'><b>Given</b>
-						<span class="bdd-step-name">Given User enters the "CoinDcx123" in password textfield</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='40' class='node when pass' status='pass'><b>When</b>
-						<span class="bdd-step-name">When user clicks on the  NEXT button to proceed</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='41' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then user will navigate to second signup page which include phone number, referral code and country fields</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='42' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then user cliks on Sign up button</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='43' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then user verify error message for country text field</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='44' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then user verify error message for phone number text field</span>
-							<div class='pre'>passed</div>
-					</li>
-				</ul>
-		</li>
-	</ul>
-</div>
-<div class='scenariooutline node' test-id='45' status='pass'>
-	<span class='duration right label'>0h 0m 51s+96ms</span>
-	<div class='desc'>
-		<b>ScenarioOutline</b>
-		<span class="desc-text">Automate the Signup flow covering positive scenarios</span>
-	</div>
-	<ul class='steps'>
-		<li test-id='46' class='node scenario pass' status='pass'>
-			<div class='category-list'>
-				<span class='category label white-text'>@markets</span>
-				<span class='category label white-text'>@CoinDcx</span>
-			</div>
-			
-			<b>Scenario</b>
-			
-			<span class="bdd-step-name">Automate the Signup flow covering positive scenarios</span>
-			
-				<ul class='steps'>
-					<li test-id='47' class='node given pass' status='pass'><b>Given</b>
-						<span class="bdd-step-name">Given user close the banner once app launch</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='48' class='node given pass' status='pass'><b>Given</b>
-						<span class="bdd-step-name">Given User navigates to coinDcx signup screen.</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='49' class='node given pass' status='pass'><b>Given</b>
-						<span class="bdd-step-name">Given user verify the Home Screen of CoinDcx pro</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='50' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then user click on MARKETS Tab without login into the app</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='51' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And verify the narket home screen page which consist TRADE, Margin and Future options at header</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='52' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then Now search for any market under Trade eg BTC: "BTC"</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='53' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then It will give six markets for BTC in results</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='54' class='node given pass' status='pass'><b>Given</b>
-						<span class="bdd-step-name">Given User Now traverse through each market and fetch the details like Volume, price of coin and price in INR, percentage change</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='55' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then will take to the detailed market screen</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='56' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then User will fetch details for each market and it should not be null value.</span>
+					<li test-id='18' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then get the min & max priced products from list</span>
 							<div class='pre'>passed</div>
 					</li>
 				</ul>
@@ -523,7 +322,7 @@
 				
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@SignUphappyflowuntilOtpScreen</span>
+						<span class='category-name'>@ShopeeAssigment</span>
 						<span class='category-status right'>
 							<span class='label pass'>1</span>
 						</span>
@@ -546,193 +345,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 20, 2021 04:21:44 AM</td>
+										<td>Nov 20, 2021 02:27:01 PM</td>
 										<td class='linked' test-id='3'>Mobile App automation assignment.Automate the Signup flow covering positive scenarios.Automate the Signup flow covering positive scenarios</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@CoinDcx</span>
-						<span class='category-status right'>
-							<span class='label pass'>4</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 4</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Aug 20, 2021 04:21:44 AM</td>
-										<td class='linked' test-id='3'>Mobile App automation assignment.Automate the Signup flow covering positive scenarios.Automate the Signup flow covering positive scenarios</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Aug 20, 2021 04:22:15 AM</td>
-										<td class='linked' test-id='19'>Mobile App automation assignment.Automate the Signup flow covering Negative scenarios.Automate the Signup flow covering Negative scenarios</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Aug 20, 2021 04:22:49 AM</td>
-										<td class='linked' test-id='31'>Mobile App automation assignment.Market screen.Market screen</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Aug 20, 2021 04:23:28 AM</td>
-										<td class='linked' test-id='46'>Mobile App automation assignment.Automate the Signup flow covering positive scenarios.Automate the Signup flow covering positive scenarios</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@positivescenario</span>
-						<span class='category-status right'>
-							<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Aug 20, 2021 04:21:44 AM</td>
-										<td class='linked' test-id='3'>Mobile App automation assignment.Automate the Signup flow covering positive scenarios.Automate the Signup flow covering positive scenarios</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@NegstiveScenarioforfirstsignupscreenemptyfields</span>
-						<span class='category-status right'>
-							<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Aug 20, 2021 04:22:15 AM</td>
-										<td class='linked' test-id='19'>Mobile App automation assignment.Automate the Signup flow covering Negative scenarios.Automate the Signup flow covering Negative scenarios</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@NegstiveScenarioforSecondsignupscreenemptyfields</span>
-						<span class='category-status right'>
-							<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Aug 20, 2021 04:22:49 AM</td>
-										<td class='linked' test-id='31'>Mobile App automation assignment.Market screen.Market screen</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@markets</span>
-						<span class='category-status right'>
-							<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Aug 20, 2021 04:23:28 AM</td>
-										<td class='linked' test-id='46'>Mobile App automation assignment.Automate the Signup flow covering positive scenarios.Automate the Signup flow covering positive scenarios</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -767,31 +381,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>1</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>47</div>
+					<div class='panel-lead'>15</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Aug 20, 2021 04:21:44 AM</div>
+					<div class='panel-lead'>Nov 20, 2021 02:27:00 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Aug 20, 2021 04:24:19 AM</div>
+			 		<div class='panel-lead'>Nov 20, 2021 02:27:18 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>154,853ms</div>
+					<div class='panel-lead'>17,492ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -807,52 +421,7 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@SignUphappyflowuntilOtpScreen</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@CoinDcx</td>
-							<td>4</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@positivescenario</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@NegstiveScenarioforfirstsignupscreenemptyfields</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@NegstiveScenarioforSecondsignupscreenemptyfields</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@markets</td>
+							<td>@ShopeeAssigment</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -881,7 +450,7 @@
 				skipParent: 0,
 				exceptionsParent: 0,
 				
-				passChild: 4,
+				passChild: 1,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
@@ -890,7 +459,7 @@
 				infoChild: 0,
 				exceptionsChild: 0,
 				
-				passGrandChild: 47,
+				passGrandChild: 15,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,

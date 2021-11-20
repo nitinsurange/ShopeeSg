@@ -4,7 +4,7 @@
 
   Background: Coindcx
 
-  @CoinDcx @SignUphappyflowuntilOtpScreen @positivescenario
+  @ShopeeAssigment 
   Scenario Outline: Automate the Signup flow covering positive scenarios
    Given user lanuch Shopee SG app
    Then user Swipe through all tutorial screens and tap on START button

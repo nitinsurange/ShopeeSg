@@ -18,11 +18,11 @@
 		},
     {
       "android": {
-        "platformVersion": "",
+        "platformVersion": "10",
         "app":"",
-        "deviceName": "",
-        "appPackage": "",
-        "appActivity": "",
+        "deviceName": "Redmi Nitin",
+        "appPackage": "com.shopee.sg",
+        "appActivity": "com.shopee.app.ui.home.HomeActivity_",
         "automationName": "uiautomator2"
       }
     }
