@@ -13,12 +13,86 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import com.shopee.Assignment.ShopeeSgPage;
+
 import java.time.Duration;
 
 public class BasePage {
+	protected static AppiumDriver driver;
+
+	public static void scrollUpToElement(MobileElement mobileElement, @SuppressWarnings("rawtypes") AppiumDriver driver) throws InterruptedException {
+		System.out.println("Checking scoll");
+		int count = 0;
+		while (!isDisplayedAfterWait(mobileElement, 3)) {
+			// scroll up
+			swipeUp(driver);
+			count++;
+			if (count == 10) {
+				System.out.println("Element not found");
+				break;
+			}
+		}
+		BasePage.waitForPageToLoad();
+	}
 	
-	
+	public static boolean isDisplayedAfterWait(WebElement locator, int timestamp) {
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, timestamp);
+			wait.until(ExpectedConditions.visibilityOf(locator));
+			boolean value = locator.isDisplayed();
+			if (value) {
+				return true;
+			} else {
+				return false;
+			}
+		} catch (Exception e) {
+			return false;
+		}
+	}
     
+	public static void waitForPageToLoad() throws InterruptedException {
+		if (System.getProperty("platform").equalsIgnoreCase("android")) {
+			int count = 0;
+			while (BasePage.isDisplayedAfterWait(ShopeeSgPage.TrendingShopPage, 3) && count < 30) {
+				// while
+				// (BasePageActions.isElementDisplayed(driver.findElement(By.id("com.shaadi.android:id/progress_bar")))
+				// && count < 30) {
+
+				System.out.println("Waiting for page to load...");
+				Thread.sleep(1000);
+				count++;
+			}
+			if (count == 30) {
+				System.out.println("Timeout while waiting for page to load...");
+			}
+		}
+
+	}
+	
+	public static void swipeUp(@SuppressWarnings("rawtypes") AppiumDriver driver) {
+		Dimension size = driver.manage().window().getSize();
+		int starty = (int) (size.height * 0.20);
+		int endy = (int) (size.height * 0.9);
+		int startx = size.width / 2;
+		if (System.getProperty("platform").equalsIgnoreCase("android")) {
+			swipeAndroid(driver, startx, starty, startx, endy);
+		} else {
+			swipeiOS(driver, startx, starty, startx, endy);
+		}
+	}
+	
+	public static void swipeAndroid(@SuppressWarnings("rawtypes") AppiumDriver driver, int startx, int starty, int endx,
+			int endy) {
+		new AndroidTouchAction(driver).press(PointOption.point(startx, starty))
+				.waitAction(WaitOptions.waitOptions(Duration.ofSeconds(10))).moveTo(PointOption.point(endx, endy))
+				.release().perform();
+	}
+	public static void swipeiOS(@SuppressWarnings("rawtypes") AppiumDriver driver, int startx, int starty, int endx,
+			int endy) {
+		new IOSTouchAction(driver).press(PointOption.point(startx, starty))
+				.waitAction(WaitOptions.waitOptions(Duration.ofSeconds(2))).moveTo(PointOption.point(endx, endy))
+				.release().perform();
+	}
     public void inputText(String inputText, MobileElement mobileElement,@SuppressWarnings("rawtypes") AppiumDriver driver) {
         mobileElement.clear();
         mobileElement.sendKeys(inputText);

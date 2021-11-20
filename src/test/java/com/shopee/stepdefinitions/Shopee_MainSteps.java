@@ -3,7 +3,7 @@ package com.shopee.stepdefinitions;
 import org.testng.annotations.AfterMethod;
 import org.testng.asserts.SoftAssert;
 
-import com.shopee.Assignment.Shopee;
+import com.shopee.Assignment.ShopeeSgPage;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -19,7 +19,7 @@ import io.appium.java_client.touch.offset.PointOption;
 public class Shopee_MainSteps {
     
 
-	private Shopee shopee ;
+	private ShopeeSgPage shopee ;
 
 
 
