@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Test Suite" duration-ms="155627" started-at="2021-08-19T20:21:44Z" finished-at="2021-08-19T20:24:19Z">
+    <groups>
+    </groups>
+    <test name="Calculate Bill and Set new Tip" duration-ms="155627" started-at="2021-08-19T20:21:44Z" finished-at="2021-08-19T20:24:19Z">
+      <class name="com.hlb.viet.runner.RunCukesTest">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.hlb.viet.runner.RunCukesTest@337d0578]" name="setUpClass" is-config="true" duration-ms="173" started-at="2021-08-19T20:21:44Z" finished-at="2021-08-19T20:21:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.hlb.viet.runner.RunCukesTest@337d0578]" name="feature" duration-ms="154912" started-at="2021-08-19T20:21:44Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2021-08-19T20:24:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mobile App automation assignment]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.hlb.viet.runner.RunCukesTest@337d0578]" name="tearDownClass" is-config="true" duration-ms="197" started-at="2021-08-19T20:24:19Z" finished-at="2021-08-19T20:24:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method status="PASS" signature="stopServer()[pri:0, instance:com.hlb.viet.runner.RunCukesTest@337d0578]" name="stopServer" is-config="true" duration-ms="267" started-at="2021-08-19T20:24:19Z" finished-at="2021-08-19T20:24:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopServer -->
+        <test-method status="PASS" signature="generateExtentReport()[pri:0, instance:com.hlb.viet.runner.RunCukesTest@337d0578]" name="generateExtentReport" is-config="true" duration-ms="3" started-at="2021-08-19T20:24:19Z" finished-at="2021-08-19T20:24:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateExtentReport -->
+      </class> <!-- com.hlb.viet.runner.RunCukesTest -->
+    </test> <!-- Calculate Bill and Set new Tip -->
+  </suite> <!-- Test Suite -->
+</testng-results>

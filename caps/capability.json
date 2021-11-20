@@ -1,0 +1,16 @@
+{
+  "platforms": 
+  [
+    {
+      "android": {
+        "platformVersion": "10",
+        "app":"",
+        "deviceName": "Redmi nitin",
+        "appPackage": "com.coindcx",
+        "appActivity": "com.coindcx.security.ScreenLock",
+        "automationName": "uiautomator2"
+      }
+    }
+  ]
+  
+  }
