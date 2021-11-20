@@ -11,7 +11,7 @@
 				"xcodeOrgId": "",
 				"xcodeSigningId": "iPhone Developer",
 				"bundleId": "com.beeasy.shopee.sg",
-				"resetOnSessionStartOnly": "false",
+				"resetOnSessionStartOnly": "true",
 				"useNewWDA": "true",
 				"updatedWDABundleId": "true"
 			}
