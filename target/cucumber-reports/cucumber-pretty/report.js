@@ -119,7 +119,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 16904184358,
+  "duration": 57763280251,
   "status": "passed"
 });
 formatter.background({
@@ -222,56 +222,56 @@ formatter.match({
   "location": "Shopee_MainSteps.user_lanuch_Shopee_SG_app()"
 });
 formatter.result({
-  "duration": 201406151,
+  "duration": 168107859,
   "status": "passed"
 });
 formatter.match({
   "location": "Shopee_MainSteps.user_Swipe_through_all_tutorial_screens_and_tap_on_START_button()"
 });
 formatter.result({
-  "duration": 15798,
+  "duration": 21481,
   "status": "passed"
 });
 formatter.match({
   "location": "Shopee_MainSteps.user_Allow_permission_for_location_if_prompted()"
 });
 formatter.result({
-  "duration": 13316,
+  "duration": 21004,
   "status": "passed"
 });
 formatter.match({
   "location": "Shopee_MainSteps.dismiss_the_Add_popup_in_landing_screen()"
 });
 formatter.result({
-  "duration": 26008,
+  "duration": 25388,
   "status": "passed"
 });
 formatter.match({
   "location": "Shopee_MainSteps.user_Clicks_on_Shopee_Mall_button_from_bottom_navbar()"
 });
 formatter.result({
-  "duration": 23806,
+  "duration": 22304,
   "status": "passed"
 });
 formatter.match({
   "location": "Shopee_MainSteps.user_Clicks_on_Mobile_and_Gadgets_from_top_header_menu()"
 });
 formatter.result({
-  "duration": 16225,
+  "duration": 24200,
   "status": "passed"
 });
 formatter.match({
   "location": "Shopee_MainSteps.user_Clicks_on_See_All_for_Trending_Shops()"
 });
 formatter.result({
-  "duration": 14573,
+  "duration": 16212,
   "status": "passed"
 });
 formatter.match({
   "location": "Shopee_MainSteps.swipe_up_and_select_Samsung_then_get_the_last_active_statusshop_rating_and_Followers()"
 });
 formatter.result({
-  "duration": 13506,
+  "duration": 15212,
   "status": "passed"
 });
 formatter.match({
@@ -292,49 +292,49 @@ formatter.match({
   "location": "Shopee_MainSteps.user_Taps_on_Filter_then_select_Rating_as_Stars_Up_Condition_as_New_and_Prices_Range_as_Min_Max(int,int,int)"
 });
 formatter.result({
-  "duration": 3211185,
+  "duration": 1737566,
   "status": "passed"
 });
 formatter.match({
   "location": "Shopee_MainSteps.user_Clicks_on_Apply_filter()"
 });
 formatter.result({
-  "duration": 20343,
+  "duration": 21331,
   "status": "passed"
 });
 formatter.match({
   "location": "Shopee_MainSteps.user_Gets_the_Max_priced_product_from_list_and_Click_on_the_product()"
 });
 formatter.result({
-  "duration": 13010,
+  "duration": 27874,
   "status": "passed"
 });
 formatter.match({
   "location": "Shopee_MainSteps.user_Swipe_left_right_on_the_image_preview_until_the_pagination_value_reaches_last_page_respectively()"
 });
 formatter.result({
-  "duration": 17841,
+  "duration": 17591,
   "status": "passed"
 });
 formatter.match({
   "location": "Shopee_MainSteps.get_the_product_rating_and_shipping_fee()"
 });
 formatter.result({
-  "duration": 24468,
+  "duration": 21000,
   "status": "passed"
 });
 formatter.match({
   "location": "Shopee_MainSteps.swipe_up_and_Click_on_Sell_All_for_From_the_Same_Shop_Similar_Products()"
 });
 formatter.result({
-  "duration": 30180,
+  "duration": 25152,
   "status": "passed"
 });
 formatter.match({
   "location": "Shopee_MainSteps.get_the_min_max_priced_products_from_list()"
 });
 formatter.result({
-  "duration": 27307,
+  "duration": 30707,
   "status": "passed"
 });
 });

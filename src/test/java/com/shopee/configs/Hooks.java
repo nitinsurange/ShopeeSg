@@ -56,7 +56,6 @@ public class Hooks {
     // @Before, @After are called Global tagged hooks
     @Before
     public void startServer() {
-    	System.out.println("Any Queries then Email Me " + "NitinSurange@hlbb.hongleong.com.my");
         AppiumServiceBuilder appiumServiceBuilder = new AppiumServiceBuilder()
                 .withAppiumJS(new File("/Applications/Appium.app/Contents/Resources/app/node_modules/appium/build/lib/main.js"))
                 .withIPAddress("127.0.0.1");

@@ -35,8 +35,40 @@ public class ShopeeSgPage extends BasePage {
         PageFactory.initElements(new AppiumFieldDecorator(this.driver),this);
     }
 
-    
 
+	@iOSXCUITFindBy(accessibility = "")
+	@AndroidFindBy(id = "com.shopee.sg:id/btn")
+	private MobileElement startbutton;
+	
+	
+	@iOSXCUITFindBy(accessibility = "")
+	@AndroidFindBy(id = "com.android.permissioncontroller:id/permission_allow_foreground_only_button")
+	private MobileElement allowpermissions;
+
+	@iOSXCUITFindBy(accessibility = "")
+	@AndroidFindBy(xpath = "//android.widget.TextView[@text = 'Shopee Mall']")
+	private MobileElement shopeemall;
+	
+	@iOSXCUITFindBy(accessibility = "")
+	@AndroidFindBy(xpath = "//android.view.ViewGroup[7]/android.widget.ImageView")
+	private MobileElement closeaddpopup;
+	
+	@iOSXCUITFindBy(accessibility = "")
+	@AndroidFindBy(xpath = "//android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.widget.ImageView")
+	private MobileElement dropdownshopeemall;
+	
+	@iOSXCUITFindBy(accessibility = "")
+	@AndroidFindBy(xpath = "//android.widget.TextView[@text = 'Mobile & Gadgets']")
+	private MobileElement mobileandgadjets;
+	
+	@iOSXCUITFindBy(accessibility = "")
+	@AndroidFindBy(xpath = "//android.widget.TextView[@text = 'See All']")
+	private MobileElement seeall;
+	
+	@iOSXCUITFindBy(accessibility = "")
+	@AndroidFindBy(xpath = "//android.widget.TextView[@text = 'Samsung']")
+	private MobileElement samsung;
+	
     @AndroidFindBy(xpath="//android.view.View[@content-desc=\"REGISTER\"]")
     private MobileElement launch;
     
