@@ -1,13 +1,28 @@
 {
   "platforms": 
-  [
+  [{
+			"ios": {
+				"app": "",
+				"platformVersion": "14.7.1",
+				"deviceName": "Nitin Surange",
+				"udid": "00008030-001874522652402E",
+				"udid_simulator": "",
+				"automationName": "XCUITest",
+				"xcodeOrgId": "",
+				"xcodeSigningId": "iPhone Developer",
+				"bundleId": "com.beeasy.shopee.sg",
+				"resetOnSessionStartOnly": "false",
+				"useNewWDA": "true",
+				"updatedWDABundleId": "true"
+			}
+		},
     {
       "android": {
-        "platformVersion": "10",
+        "platformVersion": "",
         "app":"",
-        "deviceName": "Redmi nitin",
-        "appPackage": "com.coindcx",
-        "appActivity": "com.coindcx.security.ScreenLock",
+        "deviceName": "",
+        "appPackage": "",
+        "appActivity": "",
         "automationName": "uiautomator2"
       }
     }
