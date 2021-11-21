@@ -56,6 +56,7 @@ public class ShopeeSgPage extends BasePage {
 	
 	@iOSXCUITFindBy(accessibility = "")
 	@AndroidFindBy(xpath = "//android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.widget.ImageView")
+//	@AndroidFindBy(xpath = "//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/androidx.viewpager.widget.ViewPager[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[7]/android.widget.ImageView[1]")
 	private MobileElement dropdownshopeemall;
 	
 	@iOSXCUITFindBy(accessibility = "")
@@ -121,11 +122,6 @@ public class ShopeeSgPage extends BasePage {
 		 swipeRight(driver);
  	 } 
 
-//	 for(int i=0;i<=2;i++){  
-//			new AndroidTouchAction(driver).press(PointOption.point(1030, 1464))
-//			.waitAction(WaitOptions.waitOptions(Duration.ofSeconds(2))).moveTo(PointOption.point(80, 1428))
-//			.release();	
-//			} 
 	 }
     
     public void clickonStartButton() {
@@ -153,11 +149,25 @@ public class ShopeeSgPage extends BasePage {
   	clickButton(dropdownshopeemall, driver);
   }
     
-  public void closeAddPopUp() {
+  public boolean CheckforcloseAddPopUp() {
   	
-  	waitForVisibilityOf(closeaddpopup, driver);
-  	clickButton(closeaddpopup, driver);
+	  try {
+		  closeaddpopup.isDisplayed();
+          return true;
+
+      }
+      catch (NoSuchElementException | TimeoutException e) {
+          return false;
+      }
+	  
   }
+  public void ClickonCancelpopup() {
+	  	
+		waitForVisibilityOf(closeaddpopup, driver);
+		clickButton(closeaddpopup, driver);
+	  }
+	    
+
   
   public void ClickonmobileGadjets() {
   	

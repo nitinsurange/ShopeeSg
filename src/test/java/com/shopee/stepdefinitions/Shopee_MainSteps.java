@@ -51,7 +51,13 @@ public class Shopee_MainSteps {
 
 	@Then("^Dismiss the Add popup in landing screen$")
 	public void dismiss_the_Add_popup_in_landing_screen() throws Throwable {
-//		shopee.closeAddPopUp();
+		if(shopee.CheckforcloseAddPopUp()==true) 
+		{
+			shopee.ClickonCancelpopup();
+		}else
+		{
+			System.out.println("Add pop up not displayed");
+		}
 	}
 
 	@Then("^user Clicks on Shopee Mall button from bottom navbar$")
@@ -61,7 +67,7 @@ public class Shopee_MainSteps {
 
 	@Then("^user Clicks on Mobile and Gadgets from top header menu$")
 	public void user_Clicks_on_Mobile_and_Gadgets_from_top_header_menu() throws Throwable {
-		//shopee.DropDownbuttonShopeemallpage();
+		shopee.DropDownbuttonShopeemallpage();
 		shopee.ClickonmobileGadjets();
 	}
 
