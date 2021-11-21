@@ -9,11 +9,17 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">72,413</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">184,992</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.shopee.runner.RunCukesTest</td><td><a href="#m0">feature</a></td><td rowspan="1">1637515860356</td><td rowspan="1">69803</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.shopee.runner.RunCukesTest</td><td><a href="#m0">feature</a></td><td rowspan="1">1637516207427</td><td rowspan="1">181771</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.shopee.runner.RunCukesTest#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Mobile App automation assignment</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">cucumber.runtime.CucumberException: java.lang.NullPointerException
+<h2>Default test</h2><h3 id="m0">com.shopee.runner.RunCukesTest#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Mobile App automation assignment</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">cucumber.runtime.CucumberException: org.openqa.selenium.StaleElementReferenceException: Cached elements &apos;By.xpath: //android.widget.TextView[starts-with(@text, &apos;$&apos;)]&apos; do not exist in DOM anymore
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;192.168.0.104&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_281&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.shopee.app.ui.home.Home..., appPackage: com.shopee.sg, automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: com.shopee.app.ui.home.Home..., appPackage: com.shopee.sg, automationName: uiautomator2, deviceName: Redmi Nitin, platformName: android, platformVersion: 10}, deviceApiLevel: 29, deviceManufacturer: Xiaomi, deviceModel: Redmi Note 7, deviceName: dc17a4f, deviceScreenDensity: 440, deviceScreenSize: 1080x2340, deviceUDID: dc17a4f, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 80, takesScreenshot: true, viewportRect: {height: 2051, left: 0, top: 80, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 8c316118-bd22-42cf-b7d8-848c916d431c
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at com.shopee.runner.RunCukesTest.feature(RunCukesTest.java:50)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -41,9 +47,42 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.NullPointerException
-	at com.shopee.stepdefinitions.Shopee_MainSteps.swipe_up_and_select_Samsung_then_get_the_last_active_statusshop_rating_and_Followers(Shopee_MainSteps.java:89)
-	at ✽.Then Swipe up and select Samsung then get the last active statusshop rating and Followers(ShopeeSg_Assignment.feature:17)
+Caused by: org.openqa.selenium.StaleElementReferenceException: Cached elements &apos;By.xpath: //android.widget.TextView[starts-with(@text, &apos;$&apos;)]&apos; do not exist in DOM anymore
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;192.168.0.104&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_281&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.shopee.app.ui.home.Home..., appPackage: com.shopee.sg, automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: com.shopee.app.ui.home.Home..., appPackage: com.shopee.sg, automationName: uiautomator2, deviceName: Redmi Nitin, platformName: android, platformVersion: 10}, deviceApiLevel: 29, deviceManufacturer: Xiaomi, deviceModel: Redmi Note 7, deviceName: dc17a4f, deviceScreenDensity: 440, deviceScreenSize: 1080x2340, deviceUDID: dc17a4f, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 80, takesScreenshot: true, viewportRect: {height: 2051, left: 0, top: 80, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 8c316118-bd22-42cf-b7d8-848c916d431c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:326)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.shopee.pages.BasePage.waitForAvailabilityOf(BasePage.java:176)
+	at com.shopee.Assignment.ShopeeSgPage.getMaxPriceandClickonProduct(ShopeeSgPage.java:319)
+	at com.shopee.stepdefinitions.Shopee_MainSteps.user_Gets_the_Max_priced_product_from_list_and_Click_on_the_product(Shopee_MainSteps.java:111)
+	at ✽.Then user Gets the Max priced product from list and Click on the product(ShopeeSg_Assignment.feature:20)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

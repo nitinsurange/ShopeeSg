@@ -48,7 +48,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Nov 21, 2021 11:01:00 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Nov 21, 2021 11:06:47 PM</span>
 				</a>
 			</li>
 			<li>
@@ -166,10 +166,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='68.75%'><span class='strong'>11</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='12.5%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='87.5%'>7</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='6.25%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='25%'>4</span> others
 				</div>
 			</div>
 		</div>
@@ -186,12 +186,12 @@
 				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Mobile App automation assignment</span>
-						<span class='test-time'>Nov 21, 2021 11:01:00 PM</span>
+						<span class='test-time'>Nov 21, 2021 11:06:47 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenariooutline node' test-id='2' status='fail'>
-	<span class='duration right label'>0h 1m 9s+491ms</span>
+	<span class='duration right label'>0h 3m 1s+536ms</span>
 	<div class='desc'>
 		<b>ScenarioOutline</b>
 		<span class="desc-text">Automate the Signup flow covering positive scenarios</span>
@@ -207,38 +207,103 @@
 			<span class="bdd-step-name">Automate the Signup flow covering positive scenarios</span>
 			
 				<ul class='steps'>
-					<li test-id='4' class='node then fail' status='fail'><b>Then</b>
+					<li test-id='4' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given user lanuch Shopee SG app</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='5' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then user Swipe through all tutorial screens and tap on START button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='6' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given user Allow permission for location if prompted</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='7' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Dismiss the Add popup in landing screen</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='8' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then user Clicks on Shopee Mall button from bottom navbar</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='9' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Dismiss the Add popup in landing screen</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='10' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then user Clicks on Mobile and Gadgets from top header menu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='11' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then user Clicks on See All for Trending Shops</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='12' class='node then pass' status='pass'><b>Then</b>
 						<span class="bdd-step-name">Then Swipe up and select Samsung then get the last active statusshop rating and Followers</span>
-							<div class='pre'><pre>java.lang.NullPointerException
-	at com.shopee.stepdefinitions.Shopee_MainSteps.swipe_up_and_select_Samsung_then_get_the_last_active_statusshop_rating_and_Followers(Shopee_MainSteps.java:89)
-	at ✽.Then Swipe up and select Samsung then get the last active statusshop rating and Followers(ShopeeSg_Assignment.feature:17)
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='13' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then user Taps on Filter  then select Rating  as 4 Stars & Up  Condition as New and Prices Range as Min 500 & Max 2000</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='14' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then user Clicks on Apply filter</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='15' class='node then fail' status='fail'><b>Then</b>
+						<span class="bdd-step-name">Then user Gets the Max priced product from list and Click on the product</span>
+							<div class='pre'><pre>org.openqa.selenium.StaleElementReferenceException: Cached elements 'By.xpath: //android.widget.TextView[starts-with(@text, '$')]' do not exist in DOM anymore
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '192.168.0.104', ip: '192.168.0.104', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_281'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.shopee.app.ui.home.Home..., appPackage: com.shopee.sg, automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: com.shopee.app.ui.home.Home..., appPackage: com.shopee.sg, automationName: uiautomator2, deviceName: Redmi Nitin, platformName: android, platformVersion: 10}, deviceApiLevel: 29, deviceManufacturer: Xiaomi, deviceModel: Redmi Note 7, deviceName: dc17a4f, deviceScreenDensity: 440, deviceScreenSize: 1080x2340, deviceUDID: dc17a4f, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 80, takesScreenshot: true, viewportRect: {height: 2051, left: 0, top: 80, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 8c316118-bd22-42cf-b7d8-848c916d431c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:326)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.shopee.pages.BasePage.waitForAvailabilityOf(BasePage.java:176)
+	at com.shopee.Assignment.ShopeeSgPage.getMaxPriceandClickonProduct(ShopeeSgPage.java:319)
+	at com.shopee.stepdefinitions.Shopee_MainSteps.user_Gets_the_Max_priced_product_from_list_and_Click_on_the_product(Shopee_MainSteps.java:111)
+	at ✽.Then user Gets the Max priced product from list and Click on the product(ShopeeSg_Assignment.feature:20)
 </pre></div>
 					</li>
-					<li test-id='5' class='node then skip' status='skip'><b>Then</b>
-						<span class="bdd-step-name">Then user Taps on Filter  then select Rating  as 4 Stars & Up  Condition as New and Prices Range as Min 500 & Max 2000</span>
-							<div class='pre'>skipped</div>
-					</li>
-					<li test-id='6' class='node then skip' status='skip'><b>Then</b>
-						<span class="bdd-step-name">Then user Clicks on Apply filter</span>
-							<div class='pre'>skipped</div>
-					</li>
-					<li test-id='7' class='node then skip' status='skip'><b>Then</b>
-						<span class="bdd-step-name">Then user Gets the Max priced product from list and Click on the product</span>
-							<div class='pre'>skipped</div>
-					</li>
-					<li test-id='8' class='node then skip' status='skip'><b>Then</b>
+					<li test-id='16' class='node then skip' status='skip'><b>Then</b>
 						<span class="bdd-step-name">Then user Swipe left/right on the image preview until the pagination value reaches last page respectively</span>
 							<div class='pre'>skipped</div>
 					</li>
-					<li test-id='9' class='node then skip' status='skip'><b>Then</b>
+					<li test-id='17' class='node then skip' status='skip'><b>Then</b>
 						<span class="bdd-step-name">Then Get the product rating and shipping fee</span>
 							<div class='pre'>skipped</div>
 					</li>
-					<li test-id='10' class='node then skip' status='skip'><b>Then</b>
+					<li test-id='18' class='node then skip' status='skip'><b>Then</b>
 						<span class="bdd-step-name">Then Swipe up and Click on Sell All for From the Same Shop Similar Products</span>
 							<div class='pre'>skipped</div>
 					</li>
-					<li test-id='11' class='node then skip' status='skip'><b>Then</b>
+					<li test-id='19' class='node then skip' status='skip'><b>Then</b>
 						<span class="bdd-step-name">Then get the min & max priced products from list</span>
 							<div class='pre'>skipped</div>
 					</li>
@@ -323,7 +388,7 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Nov 21, 2021 11:01:00 PM</td>
+										<td>Nov 21, 2021 11:06:47 PM</td>
 										<td class='linked' test-id='3'>Mobile App automation assignment.Automate the Signup flow covering positive scenarios.Automate the Signup flow covering positive scenarios</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
@@ -371,7 +436,7 @@
 
                         <li class='exception displayed active'>
                             <div class='exception-heading'>
-                                <span class='exception-name'>java.lang.NullPointerException</span>
+                                <span class='exception-name'>org.openqa.selenium.StaleElementReferenceException</span>
                                 <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
                             </div>
                             <div class='exception-content hide'>
@@ -386,11 +451,44 @@
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Nov 21, 2021 11:01:39 PM</td>
-                                                        <td class='linked' test-id='4'>Mobile App automation assignment.Automate the Signup flow covering positive scenarios.Automate the Signup flow covering positive scenarios.Then Swipe up and select Samsung then get the last active statusshop rating and Followers</td>
-                                                        <td><pre><pre>java.lang.NullPointerException
-	at com.shopee.stepdefinitions.Shopee_MainSteps.swipe_up_and_select_Samsung_then_get_the_last_active_statusshop_rating_and_Followers(Shopee_MainSteps.java:89)
-	at ✽.Then Swipe up and select Samsung then get the last active statusshop rating and Followers(ShopeeSg_Assignment.feature:17)
+                                                        <td>Nov 21, 2021 11:09:34 PM</td>
+                                                        <td class='linked' test-id='15'>Mobile App automation assignment.Automate the Signup flow covering positive scenarios.Automate the Signup flow covering positive scenarios.Then user Gets the Max priced product from list and Click on the product</td>
+                                                        <td><pre><pre>org.openqa.selenium.StaleElementReferenceException: Cached elements 'By.xpath: //android.widget.TextView[starts-with(@text, '$')]' do not exist in DOM anymore
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '192.168.0.104', ip: '192.168.0.104', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_281'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.shopee.app.ui.home.Home..., appPackage: com.shopee.sg, automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: com.shopee.app.ui.home.Home..., appPackage: com.shopee.sg, automationName: uiautomator2, deviceName: Redmi Nitin, platformName: android, platformVersion: 10}, deviceApiLevel: 29, deviceManufacturer: Xiaomi, deviceModel: Redmi Note 7, deviceName: dc17a4f, deviceScreenDensity: 440, deviceScreenSize: 1080x2340, deviceUDID: dc17a4f, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 80, takesScreenshot: true, viewportRect: {height: 2051, left: 0, top: 80, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 8c316118-bd22-42cf-b7d8-848c916d431c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:326)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.shopee.pages.BasePage.waitForAvailabilityOf(BasePage.java:176)
+	at com.shopee.Assignment.ShopeeSgPage.getMaxPriceandClickonProduct(ShopeeSgPage.java:319)
+	at com.shopee.stepdefinitions.Shopee_MainSteps.user_Gets_the_Max_priced_product_from_list_and_Click_on_the_product(Shopee_MainSteps.java:111)
+	at ✽.Then user Gets the Max priced product from list and Click on the product(ShopeeSg_Assignment.feature:20)
 </pre></pre></td>
                                                     </tr>
                                         </tbody>
@@ -429,25 +527,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>8</div>
+					<div class='panel-lead'>16</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Nov 21, 2021 11:01:00 PM</div>
+					<div class='panel-lead'>Nov 21, 2021 11:06:47 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Nov 21, 2021 11:02:10 PM</div>
+			 		<div class='panel-lead'>Nov 21, 2021 11:09:49 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>69,753ms</div>
+					<div class='panel-lead'>181,756ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -501,14 +599,14 @@
 				infoChild: 0,
 				exceptionsChild: 1,
 				
-				passGrandChild: 0,
+				passGrandChild: 11,
 				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 7,
+				skipGrandChild: 4,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 8,
+				exceptionsGrandChild: 5,
 			};
 		</script>
 		

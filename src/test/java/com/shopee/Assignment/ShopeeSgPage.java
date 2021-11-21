@@ -228,35 +228,20 @@ public class ShopeeSgPage extends BasePage {
 		clickButton(s, driver);
 
 		// waitForVisibilityOf(samsung, driver);
-		Thread.sleep(15000);
-//		if(!isDisplayedAfterWait(samsung, 3)) {
-//			for(int i=0;i<=2;i++) {
-				
-		
-				  try {
+		Thread.sleep(5000);
+
 						waitForVisibilityOf(samsung, driver);
 						clickButton(samsung, driver);
 
-			        }
-			        catch (StaleElementReferenceException | TimeoutException e) {
-			        }
-//			}
-//			else {
-//				
-//		
-//		}
-		
 
+	  
+
+	  
 	 
-//	  scrollUntilTextClick(driver, "Samsung");
-//	  
-//	  clickButton(samsung, driver);
 	  
-//	  	scrollUpToElement(samsung, driver);
-//	  	waitForVisibilityOf(samsung, driver);
-//	  	clickButton(samsung, driver);
-
-	  
+	  }
+  
+  public void getvaluesfromsamsungshop() {
 	 // get the 'last active status', 'shop rating' and 'Followers'
 	  
 	  String last_Active_Status = getText(active);
@@ -266,12 +251,7 @@ public class ShopeeSgPage extends BasePage {
 	  System.out.println("last_Active_Status:"+last_Active_Status);
 	  
 	  System.out.println("shopRating:"+shopRating);
-	  
-	 
-	  
-	  }
-  
-  
+  }
 
 public void taponFilter() throws InterruptedException {
 	waitForVisibilityOf(filter, driver);

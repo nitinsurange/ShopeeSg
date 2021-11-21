@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="72413" started-at="2021-11-21T17:30:59Z" finished-at="2021-11-21T17:32:12Z">
+  <suite name="Default suite" duration-ms="184992" started-at="2021-11-21T17:36:46Z" finished-at="2021-11-21T17:39:51Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="72413" started-at="2021-11-21T17:30:59Z" finished-at="2021-11-21T17:32:12Z">
+    <test name="Default test" duration-ms="184992" started-at="2021-11-21T17:36:46Z" finished-at="2021-11-21T17:39:51Z">
       <class name="com.shopee.runner.RunCukesTest">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.shopee.runner.RunCukesTest@3d680b5a]" name="setUpClass" is-config="true" duration-ms="340" started-at="2021-11-21T17:30:59Z" finished-at="2021-11-21T17:31:00Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.shopee.runner.RunCukesTest@3d680b5a]" name="setUpClass" is-config="true" duration-ms="300" started-at="2021-11-21T17:36:47Z" finished-at="2021-11-21T17:36:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.shopee.runner.RunCukesTest@3d680b5a]" name="feature" duration-ms="69803" started-at="2021-11-21T17:31:00Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2021-11-21T17:32:10Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.shopee.runner.RunCukesTest@3d680b5a]" name="feature" duration-ms="181771" started-at="2021-11-21T17:36:47Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2021-11-21T17:39:49Z">
           <params>
             <param index="0">
               <value>
@@ -21,10 +21,22 @@
           </params>
           <exception class="cucumber.runtime.CucumberException">
             <message>
-              <![CDATA[java.lang.NullPointerException]]>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: Cached elements 'By.xpath: //android.widget.TextView[starts-with(@text, '$')]' do not exist in DOM anymore
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '192.168.0.104', ip: '192.168.0.104', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_281'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.shopee.app.ui.home.Home..., appPackage: com.shopee.sg, automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: com.shopee.app.ui.home.Home..., appPackage: com.shopee.sg, automationName: uiautomator2, deviceName: Redmi Nitin, platformName: android, platformVersion: 10}, deviceApiLevel: 29, deviceManufacturer: Xiaomi, deviceModel: Redmi Note 7, deviceName: dc17a4f, deviceScreenDensity: 440, deviceScreenSize: 1080x2340, deviceUDID: dc17a4f, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 80, takesScreenshot: true, viewportRect: {height: 2051, left: 0, top: 80, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 8c316118-bd22-42cf-b7d8-848c916d431c]]>
             </message>
             <full-stacktrace>
-              <![CDATA[cucumber.runtime.CucumberException: java.lang.NullPointerException
+              <![CDATA[cucumber.runtime.CucumberException: org.openqa.selenium.StaleElementReferenceException: Cached elements 'By.xpath: //android.widget.TextView[starts-with(@text, '$')]' do not exist in DOM anymore
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '192.168.0.104', ip: '192.168.0.104', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_281'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.shopee.app.ui.home.Home..., appPackage: com.shopee.sg, automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: com.shopee.app.ui.home.Home..., appPackage: com.shopee.sg, automationName: uiautomator2, deviceName: Redmi Nitin, platformName: android, platformVersion: 10}, deviceApiLevel: 29, deviceManufacturer: Xiaomi, deviceModel: Redmi Note 7, deviceName: dc17a4f, deviceScreenDensity: 440, deviceScreenSize: 1080x2340, deviceUDID: dc17a4f, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 80, takesScreenshot: true, viewportRect: {height: 2051, left: 0, top: 80, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 8c316118-bd22-42cf-b7d8-848c916d431c
 at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 at com.shopee.runner.RunCukesTest.feature(RunCukesTest.java:50)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -52,24 +64,57 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.NullPointerException
-at com.shopee.stepdefinitions.Shopee_MainSteps.swipe_up_and_select_Samsung_then_get_the_last_active_statusshop_rating_and_Followers(Shopee_MainSteps.java:89)
-at ✽.Then Swipe up and select Samsung then get the last active statusshop rating and Followers(ShopeeSg_Assignment.feature:17)
+Caused by: org.openqa.selenium.StaleElementReferenceException: Cached elements 'By.xpath: //android.widget.TextView[starts-with(@text, '$')]' do not exist in DOM anymore
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '192.168.0.104', ip: '192.168.0.104', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_281'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.shopee.app.ui.home.Home..., appPackage: com.shopee.sg, automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: com.shopee.app.ui.home.Home..., appPackage: com.shopee.sg, automationName: uiautomator2, deviceName: Redmi Nitin, platformName: android, platformVersion: 10}, deviceApiLevel: 29, deviceManufacturer: Xiaomi, deviceModel: Redmi Note 7, deviceName: dc17a4f, deviceScreenDensity: 440, deviceScreenSize: 1080x2340, deviceUDID: dc17a4f, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 80, takesScreenshot: true, viewportRect: {height: 2051, left: 0, top: 80, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 8c316118-bd22-42cf-b7d8-848c916d431c
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:326)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+at com.shopee.pages.BasePage.waitForAvailabilityOf(BasePage.java:176)
+at com.shopee.Assignment.ShopeeSgPage.getMaxPriceandClickonProduct(ShopeeSgPage.java:319)
+at com.shopee.stepdefinitions.Shopee_MainSteps.user_Gets_the_Max_priced_product_from_list_and_Click_on_the_product(Shopee_MainSteps.java:111)
+at ✽.Then user Gets the Max priced product from list and Click on the product(ShopeeSg_Assignment.feature:20)
 ]]>
             </full-stacktrace>
           </exception> <!-- cucumber.runtime.CucumberException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.shopee.runner.RunCukesTest@3d680b5a]" name="tearDownClass" is-config="true" duration-ms="431" started-at="2021-11-21T17:32:10Z" finished-at="2021-11-21T17:32:10Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.shopee.runner.RunCukesTest@3d680b5a]" name="tearDownClass" is-config="true" duration-ms="854" started-at="2021-11-21T17:39:49Z" finished-at="2021-11-21T17:39:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method status="PASS" signature="stopServer()[pri:0, instance:com.shopee.runner.RunCukesTest@3d680b5a]" name="stopServer" is-config="true" duration-ms="1720" started-at="2021-11-21T17:32:10Z" finished-at="2021-11-21T17:32:12Z">
+        <test-method status="PASS" signature="stopServer()[pri:0, instance:com.shopee.runner.RunCukesTest@3d680b5a]" name="stopServer" is-config="true" duration-ms="1927" started-at="2021-11-21T17:39:50Z" finished-at="2021-11-21T17:39:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopServer -->
-        <test-method status="PASS" signature="generateExtentReport()[pri:0, instance:com.shopee.runner.RunCukesTest@3d680b5a]" name="generateExtentReport" is-config="true" duration-ms="9" started-at="2021-11-21T17:32:12Z" finished-at="2021-11-21T17:32:12Z">
+        <test-method status="PASS" signature="generateExtentReport()[pri:0, instance:com.shopee.runner.RunCukesTest@3d680b5a]" name="generateExtentReport" is-config="true" duration-ms="6" started-at="2021-11-21T17:39:52Z" finished-at="2021-11-21T17:39:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateExtentReport -->

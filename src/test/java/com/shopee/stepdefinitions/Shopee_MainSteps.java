@@ -35,22 +35,25 @@ public class Shopee_MainSteps {
 	Thread.sleep(5000);
 	}
 
-	@Then("^user Swipe through all tutorial screens and tap on START button$")
-	public void user_Swipe_through_all_tutorial_screens_and_tap_on_START_button() throws Throwable {
-
-		
+	@Then("^user Swipe through all tutorial screens$")
+	public void user_Swipe_through_all_tutorial_screens() throws Throwable {
 		shopee= new ShopeeSgPage();
 		shopee.SwipeLeftuntilstrtbutton();
-		shopee.clickonStartButton();
 	}
 
+	@Then("^user taps on Start button$")
+	public void user_taps_on_Start_button() throws Throwable {
+		shopee.clickonStartButton();
+
+	}
+	
 	@Given("^user Allow permission for location if prompted$")
 	public void user_Allow_permission_for_location_if_prompted() throws Throwable {
 		shopee.clickonAllowPermissions();
 	}
 
-	@Then("^Dismiss the Add popup in landing screen$")
-	public void dismiss_the_Add_popup_in_landing_screen() throws Throwable {
+	@Then("^Dismiss the Add popup on landing screen if present$")
+	public void dismiss_the_Add_popup_on_landing_screen_if_present() throws Throwable {
 		if(shopee.CheckforcloseAddPopUp()==true) 
 		{
 			shopee.ClickonCancelpopup();
@@ -59,6 +62,7 @@ public class Shopee_MainSteps {
 			System.out.println("Add pop up not displayed");
 		}
 	}
+	
 
 	@Then("^user Clicks on Shopee Mall button from bottom navbar$")
 	public void user_Clicks_on_Shopee_Mall_button_from_bottom_navbar() throws Throwable {
@@ -83,13 +87,18 @@ public class Shopee_MainSteps {
 		shopee.ClickonSeeAll();
 	}
 
-	@Then("^Swipe up and select Samsung then get the last active statusshop rating and Followers$")
-	public void swipe_up_and_select_Samsung_then_get_the_last_active_statusshop_rating_and_Followers() throws Throwable {
-		Thread.sleep(30000);
+	@Then("^user swipe up and selects the samsung shop from all trending shops$")
+	public void user_swipe_up_and_selects_the_samsung_shop_from_all_trending_shops() throws Throwable {
 		shopee.SwipeUpandClickonSamsungoption();
-		Thread.sleep(5000);
 
 	}
+
+	@Then("^user gets the last active, statusshop, rating and foloowers$")
+	public void user_gets_the_last_active_statusshop_rating_and_foloowers() throws Throwable {
+		shopee.getvaluesfromsamsungshop();
+	}
+	
+
 
 
 
