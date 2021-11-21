@@ -78,11 +78,14 @@ public class Shopee_MainSteps {
 
 	@Then("^Swipe up and select Samsung then get the last active statusshop rating and Followers$")
 	public void swipe_up_and_select_Samsung_then_get_the_last_active_statusshop_rating_and_Followers() throws Throwable {
-		shopee.SwipeUpandClickonSamsungoption();
+//		shopee.SwipeUpandClickonSamsungoption();
+		Thread.sleep(5000);
+
 	}
 
 	@Then("^user Taps on Filter  then select Rating  as (\\d+) Stars & Up  Condition as New and Prices Range as Min (\\d+) & Max (\\d+)$")
 	public void user_Taps_on_Filter_then_select_Rating_as_Stars_Up_Condition_as_New_and_Prices_Range_as_Min_Max(int arg1, int arg2, int arg3) throws Throwable {
+		Thread.sleep(5000);
 		shopee.taponFilter();
 		shopee.swipeandSelectRating();
 		shopee.enterPriceRange( arg2,  arg3);

@@ -11,6 +11,7 @@
    Given user Allow permission for location if prompted
    Then Dismiss the Add popup in landing screen
    Then user Clicks on Shopee Mall button from bottom navbar
+   Then Dismiss the Add popup in landing screen
    Then user Clicks on Mobile and Gadgets from top header menu
    Then user Clicks on See All for Trending Shops
    Then Swipe up and select Samsung then get the last active statusshop rating and Followers

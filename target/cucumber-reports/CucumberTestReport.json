@@ -1,0 +1,252 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Shopee SG Assignment",
+        "description": "",
+        "type": "background",
+        "keyword": "Background"
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 11119827847,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.startServer()"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "Automate the Signup flow covering positive scenarios",
+        "description": "",
+        "id": "mobile-app-automation-assignment;automate-the-signup-flow-covering-positive-scenarios;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5158695916,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user lanuch Shopee SG app",
+            "match": {
+              "location": "Shopee_MainSteps.user_lanuch_Shopee_SG_app()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6352877161,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user Swipe through all tutorial screens and tap on START button",
+            "match": {
+              "location": "Shopee_MainSteps.user_Swipe_through_all_tutorial_screens_and_tap_on_START_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5155147411,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user Allow permission for location if prompted",
+            "match": {
+              "location": "Shopee_MainSteps.user_Allow_permission_for_location_if_prompted()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10911275581,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Dismiss the Add popup in landing screen",
+            "match": {
+              "location": "Shopee_MainSteps.dismiss_the_Add_popup_in_landing_screen()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1097150279,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user Clicks on Shopee Mall button from bottom navbar",
+            "match": {
+              "location": "Shopee_MainSteps.user_Clicks_on_Shopee_Mall_button_from_bottom_navbar()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10715236422,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Dismiss the Add popup in landing screen",
+            "match": {
+              "location": "Shopee_MainSteps.dismiss_the_Add_popup_in_landing_screen()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2511281365,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user Clicks on Mobile and Gadgets from top header menu",
+            "match": {
+              "location": "Shopee_MainSteps.user_Clicks_on_Mobile_and_Gadgets_from_top_header_menu()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7021114405,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user Clicks on See All for Trending Shops",
+            "match": {
+              "location": "Shopee_MainSteps.user_Clicks_on_See_All_for_Trending_Shops()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5005122179,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Swipe up and select Samsung then get the last active statusshop rating and Followers",
+            "match": {
+              "location": "Shopee_MainSteps.swipe_up_and_select_Samsung_then_get_the_last_active_statusshop_rating_and_Followers()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 40134885699,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user Taps on Filter  then select Rating  as 4 Stars \u0026 Up  Condition as New and Prices Range as Min 500 \u0026 Max 2000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 44
+                },
+                {
+                  "val": "500",
+                  "offset": 99
+                },
+                {
+                  "val": "2000",
+                  "offset": 109
+                }
+              ],
+              "location": "Shopee_MainSteps.user_Taps_on_Filter_then_select_Rating_as_Stars_Up_Condition_as_New_and_Prices_Range_as_Min_Max(int,int,int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1616207279,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user Clicks on Apply filter",
+            "match": {
+              "location": "Shopee_MainSteps.user_Clicks_on_Apply_filter()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6982739630,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user Gets the Max priced product from list and Click on the product",
+            "match": {
+              "location": "Shopee_MainSteps.user_Gets_the_Max_priced_product_from_list_and_Click_on_the_product()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 21994,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user Swipe left/right on the image preview until the pagination value reaches last page respectively",
+            "match": {
+              "location": "Shopee_MainSteps.user_Swipe_left_right_on_the_image_preview_until_the_pagination_value_reaches_last_page_respectively()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 24488,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Get the product rating and shipping fee",
+            "match": {
+              "location": "Shopee_MainSteps.get_the_product_rating_and_shipping_fee()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 23471,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Swipe up and Click on Sell All for From the Same Shop Similar Products",
+            "match": {
+              "location": "Shopee_MainSteps.swipe_up_and_Click_on_Sell_All_for_From_the_Same_Shop_Similar_Products()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 17347,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "get the min \u0026 max priced products from list",
+            "match": {
+              "location": "Shopee_MainSteps.get_the_min_max_priced_products_from_list()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@ShopeeAssigment"
+          }
+        ]
+      }
+    ],
+    "name": "Mobile App automation assignment",
+    "description": "",
+    "id": "mobile-app-automation-assignment",
+    "keyword": "Feature",
+    "uri": "ShopeeSg_Assignment.feature"
+  }
+]
