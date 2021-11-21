@@ -68,6 +68,10 @@ public class ShopeeSgPage extends BasePage {
 	private MobileElement seeall;
 	
 	@iOSXCUITFindBy(accessibility = "")
+	@AndroidFindBy(xpath = "//android.view.ViewGroup[6]//android.widget.ImageView")
+	private MobileElement clickondropdowntoselectmobileandgadgetsamsung;
+	
+	@iOSXCUITFindBy(accessibility = "")
 	@AndroidFindBy(xpath = "//android.widget.TextView[@text = 'Samsung']")
 	private MobileElement samsung;
 	
@@ -175,6 +179,23 @@ public class ShopeeSgPage extends BasePage {
   	clickButton(mobileandgadjets, driver);
   }
   
+  public void swipeformobilegadgets() throws InterruptedException {
+	  
+	  Thread.sleep(2000);	
+	  if(isDisplayedAfterWait(mobileandgadjets, 2)==false) {
+		  (new TouchAction(driver)).press(PointOption.point(863,346))
+			.waitAction(WaitOptions.waitOptions(Duration.ofMillis(300)))
+			.moveTo(PointOption.point(235,350)).release().perform();
+//		  swipelefthorizontaluntilmobilegadgets();
+		    
+	  }else {
+		  (new TouchAction(driver)).press(PointOption.point(863,346))
+			.waitAction(WaitOptions.waitOptions(Duration.ofMillis(300)))
+			.moveTo(PointOption.point(235,350)).release().perform();
+//		  swipelefthorizontaluntilmobilegadgets(); 
+	  }
+
+	  }
   
   public void ClickonSeeAll() {
 	  	
@@ -207,6 +228,8 @@ public class ShopeeSgPage extends BasePage {
 	 
 	  
 	  }
+  
+  
 
 public void taponFilter() {
 	waitForVisibilityOf(filter, driver);

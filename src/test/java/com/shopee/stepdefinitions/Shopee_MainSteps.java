@@ -71,6 +71,13 @@ public class Shopee_MainSteps {
 		shopee.ClickonmobileGadjets();
 	}
 
+	@Then("^user Clicks on Mobile and Gadgets from top header menu after swiping horizantally$")
+	public void user_Clicks_on_Mobile_and_Gadgets_from_top_header_menu_after_swiping_horizantally() throws Throwable {
+		shopee.swipeformobilegadgets();
+		shopee.ClickonmobileGadjets();
+
+	}
+	
 	@Then("^user Clicks on See All for Trending Shops$")
 	public void user_Clicks_on_See_All_for_Trending_Shops() throws Throwable {
 		shopee.ClickonSeeAll();
@@ -78,10 +85,12 @@ public class Shopee_MainSteps {
 
 	@Then("^Swipe up and select Samsung then get the last active statusshop rating and Followers$")
 	public void swipe_up_and_select_Samsung_then_get_the_last_active_statusshop_rating_and_Followers() throws Throwable {
-//		shopee.SwipeUpandClickonSamsungoption();
+		shopee.SwipeUpandClickonSamsungoption();
 		Thread.sleep(5000);
 
 	}
+
+
 
 	@Then("^user Taps on Filter  then select Rating  as (\\d+) Stars & Up  Condition as New and Prices Range as Min (\\d+) & Max (\\d+)$")
 	public void user_Taps_on_Filter_then_select_Rating_as_Stars_Up_Condition_as_New_and_Prices_Range_as_Min_Max(int arg1, int arg2, int arg3) throws Throwable {

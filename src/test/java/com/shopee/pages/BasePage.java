@@ -45,7 +45,7 @@ public class BasePage {
 		int count = 0;
 		while (!isDisplayedAfterWait(mobileElement, 3)) {
 			// scroll up
-			swipeUp(driver);
+			swipeDown();
 			count++;
 			if (count == 10) {
 				System.out.println("Element not found");
@@ -53,6 +53,18 @@ public class BasePage {
 			}
 		}
 		BasePage.waitForPageToLoad();
+	}
+	
+	public static void swipeDown() {
+		Dimension size = driver.manage().window().getSize();
+		int starty = (int) (size.getWidth() / 2);
+		int endy = (int) (size.getHeight() * 0.60);
+		int startx = size.getWidth() / 2;
+		if (System.getProperty("platform").equalsIgnoreCase("android")) {
+			swipeAndroid(driver, startx, starty, startx, endy);
+		} else {
+			swipeiOS(driver, startx, starty, startx, endy);
+		}		
 	}
 	
 	public static boolean isDisplayedAfterWait(WebElement locator, int timestamp) {
@@ -94,11 +106,8 @@ public class BasePage {
 		int starty = (int) (size.height * 0.20);
 		int endy = (int) (size.height * 0.9);
 		int startx = size.width / 2;
-		if (System.getProperty("platform").equalsIgnoreCase("android")) {
 			swipeAndroid(driver, startx, starty, startx, endy);
-		} else {
-			swipeiOS(driver, startx, starty, startx, endy);
-		}
+	
 	}
 	public static void swipefilterpage() throws InterruptedException {
 		Thread.sleep(1000);
@@ -236,4 +245,10 @@ public void scrollUntilTextClick(AppiumDriver driver, String elementText) {
 	}
 
 
-}
+
+
+
+  }
+
+
+
