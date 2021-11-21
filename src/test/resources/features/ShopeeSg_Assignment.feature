@@ -14,7 +14,6 @@
    Then user Clicks on Shopee Mall button from bottom navbar
    Then Dismiss the Add popup on landing screen if present
    Then user Clicks on Mobile and Gadgets from top header menu
-   #Then user Clicks on Mobile and Gadgets from top header menu after swiping horizantally
    Then user Clicks on See All for Trending Shops
    Then user swipe up and selects the samsung shop from all trending shops
    Then user gets the last active, statusshop, rating and foloowers
