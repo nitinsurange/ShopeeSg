@@ -215,17 +215,9 @@ public void taponFilter() {
 
 @SuppressWarnings("rawtypes")
 public void swipeandSelectRating() throws InterruptedException {
-	Thread.sleep(5000);
-	 //swipeAndroid(driver, 600, 1600, 600, 750);
-    // 14. Make a Swipe gesture from ('609','1989') to ('629','812')
-    (new TouchAction(driver)).press(PointOption.point(609,1989))
-        				.waitAction(WaitOptions.waitOptions(Duration.ofMillis(300)))
-        				.moveTo(PointOption.point(629,812)).release().perform();
 
- 
-	 
-//	 waitForAvailabilityOf(fourStarUp, driver);
-//	 clickButton(fourStarUp, driver);
+     swipefilterpage();
+
 }
 
 public void enterPriceRange(int amount1, int amount2) {

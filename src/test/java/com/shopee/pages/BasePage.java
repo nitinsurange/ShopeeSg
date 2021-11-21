@@ -3,6 +3,7 @@ package com.shopee.pages;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidTouchAction;
 import io.appium.java_client.ios.IOSTouchAction;
 import io.appium.java_client.pagefactory.AndroidFindBy;
@@ -98,6 +99,13 @@ public class BasePage {
 		} else {
 			swipeiOS(driver, startx, starty, startx, endy);
 		}
+	}
+	public static void swipefilterpage() throws InterruptedException {
+		Thread.sleep(1000);
+	    // 14. Make a Swipe gesture from ('609','1989') to ('629','812')
+	    (new TouchAction(driver)).press(PointOption.point(609,1989))
+	        				.waitAction(WaitOptions.waitOptions(Duration.ofMillis(300)))
+	        				.moveTo(PointOption.point(629,812)).release().perform();
 	}
 	
 	public static void swipeAndroid(@SuppressWarnings("rawtypes") AppiumDriver driver, int startx, int starty, int endx,
