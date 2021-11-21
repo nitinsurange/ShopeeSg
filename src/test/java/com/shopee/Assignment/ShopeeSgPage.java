@@ -14,8 +14,10 @@ import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
 
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.support.PageFactory;
@@ -108,6 +110,22 @@ public class ShopeeSgPage extends BasePage {
     @AndroidFindBy(xpath = "//android.widget.TextView[starts-with(@text, '$')]")
     private List<MobileElement> max_price;
     
+    @AndroidFindBy(xpath = "//android.widget.TextView[@text = 'S']")
+	private MobileElement s;
+
+	@AndroidFindBy(xpath = "//android.widget.TextView[starts-with(@text, '1/')]")
+	private MobileElement paginationNo;
+
+	@AndroidFindBy(xpath = "//android.view.ViewGroup[4]/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.TextView")
+	private MobileElement product_Rating;
+
+	@AndroidFindBy(xpath = "//android.view.ViewGroup[2]/android.view.ViewGroup[2]/android.widget.TextView[2]")
+	private MobileElement shipping_fee;
+
+	@AndroidFindBy(xpath = "//android.widget.TextView[starts-with(@text, '$')]")
+	private List<MobileElement> product_prices;
+	
+	
     public boolean checkForSignupPage()
     {
         try {
@@ -278,10 +296,97 @@ public void getMaxPriceandClickonProduct() {
 	
 }
 
+public void swipeImagesuntilPagination() {
 
+	String pagination = getText(paginationNo);
+	String[] values = pagination.split("/");
+	System.out.println(values[0]);
 
+	System.out.println(values[1]);
 
+	int totalPagNo = Integer.parseInt(values[1]);
+	System.out.println("Total pagination No::" + totalPagNo);
 
+	for (int i = 0; i <= totalPagNo; i++) {
+		swipeAndroid(driver, 916, 598, 145, 598);
+	}
+
+}
+
+public void getProductRatingShippingFee() {
+
+	String productRating = getText(product_Rating);
+	System.out.println("productRating:" + productRating);
+
+	swipeAndroid(driver, 550, 1943, 550, 700);
+
+	waitForVisibilityOf(shipping_fee, driver);
+	String ShippingFee = getText(shipping_fee);
+	System.out.println("ShippingFee:" + ShippingFee);
+
+}
+
+public void clickonSeeAllSameshop() {
+
+	swipeAndroid(driver, 550, 1943, 550, 1201);
+	waitForVisibilityOf(seeall, driver);
+	clickButton(seeall, driver);
+}
+
+public void getMinMaxProductfromShop() {
+
+	String endText = "No more products found.";
+
+	ArrayList<String> productPricesList = new ArrayList<String>();
+
+	while (getItems(endText).size() == 0) {
+
+		for (int i = 0; i < product_prices.size(); i++) {
+
+			String eleText = getText(product_prices.get(i));
+
+			productPricesList.add(eleText);
+		}
+
+		swipeAndroid(driver, 550, 2000, 550, 380);
+	}
+
+	if (getItems(endText).size() > 0) {
+		String text = getItems(endText).get(0).getText();
+		System.out.println("User Navigated till the text: " + text);
+		getItems(endText).get(0).click();
+	}
+
+	System.out.println("printing all product prices");
+	System.out.println("Before::::");
+	for (int j = 0; j < productPricesList.size(); j++) {
+
+		System.out.println(productPricesList.get(j));
+	}
+
+	// get prices contains tilde and remove contains tilde
+	for (int j = 0; j < productPricesList.size(); j++) {
+
+		if (productPricesList.get(j).contains("~")) {
+			String splPrice = productPricesList.get(j);
+			String[] values = splPrice.split("~");
+			productPricesList.add(values[1]);
+			productPricesList.remove(productPricesList.get(j));
+		}
+	}
+	System.out.println(" ");
+	System.out.println("After::::");
+	for (int j = 0; j < productPricesList.size(); j++) {
+
+		System.out.println(productPricesList.get(j));
+	}
+
+}
+
+@SuppressWarnings("unchecked")
+public List<MobileElement> getItems(String endText) {
+	return driver.findElements(By.xpath("//*[@text='" + endText + "']"));
+}
 
 
 

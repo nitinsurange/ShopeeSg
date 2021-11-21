@@ -112,21 +112,23 @@ public class Shopee_MainSteps {
 
 	@Then("^user Swipe left/right on the image preview until the pagination value reaches last page respectively$")
 	public void user_Swipe_left_right_on_the_image_preview_until_the_pagination_value_reaches_last_page_respectively() throws Throwable {
-
+		shopee.swipeImagesuntilPagination();
 	}
 
 	@Then("^Get the product rating and shipping fee$")
 	public void get_the_product_rating_and_shipping_fee() throws Throwable {
-	   
+		shopee.getProductRatingShippingFee();
 	}
 
 	@Then("^Swipe up and Click on Sell All for From the Same Shop Similar Products$")
 	public void swipe_up_and_Click_on_Sell_All_for_From_the_Same_Shop_Similar_Products() throws Throwable {
-	  
+		shopee.clickonSeeAllSameshop();
 	}
 
 	@Then("^get the min & max priced products from list$")
 	public void get_the_min_max_priced_products_from_list() throws Throwable {
-	 
+		shopee.getMinMaxProductfromShop();
 	}
+	
+	
 }
