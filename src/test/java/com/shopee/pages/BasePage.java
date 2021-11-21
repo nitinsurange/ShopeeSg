@@ -109,8 +109,8 @@ public class BasePage {
 			swipeAndroid(driver, startx, starty, startx, endy);
 	
 	}
-	public static void swipefilterpage() throws InterruptedException {
-		Thread.sleep(1000);
+	@SuppressWarnings("rawtypes")
+	public static void swipefilterpage(AppiumDriver driver) throws InterruptedException {
 	    // 14. Make a Swipe gesture from ('609','1989') to ('629','812')
 	    (new TouchAction(driver)).press(PointOption.point(609,1989))
 	        				.waitAction(WaitOptions.waitOptions(Duration.ofMillis(300)))

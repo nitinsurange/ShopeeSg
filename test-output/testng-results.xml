@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="96457" started-at="2021-11-21T07:31:01Z" finished-at="2021-11-21T07:32:37Z">
+  <suite name="Default suite" duration-ms="72413" started-at="2021-11-21T17:30:59Z" finished-at="2021-11-21T17:32:12Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="96457" started-at="2021-11-21T07:31:01Z" finished-at="2021-11-21T07:32:37Z">
+    <test name="Default test" duration-ms="72413" started-at="2021-11-21T17:30:59Z" finished-at="2021-11-21T17:32:12Z">
       <class name="com.shopee.runner.RunCukesTest">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.shopee.runner.RunCukesTest@3d680b5a]" name="setUpClass" is-config="true" duration-ms="205" started-at="2021-11-21T07:31:01Z" finished-at="2021-11-21T07:31:01Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.shopee.runner.RunCukesTest@3d680b5a]" name="setUpClass" is-config="true" duration-ms="340" started-at="2021-11-21T17:30:59Z" finished-at="2021-11-21T17:31:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.shopee.runner.RunCukesTest@3d680b5a]" name="feature" duration-ms="95028" started-at="2021-11-21T07:31:01Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2021-11-21T07:32:36Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.shopee.runner.RunCukesTest@3d680b5a]" name="feature" duration-ms="69803" started-at="2021-11-21T17:31:00Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2021-11-21T17:32:10Z">
           <params>
             <param index="0">
               <value>
@@ -53,26 +53,23 @@ at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 Caused by: java.lang.NullPointerException
-at com.shopee.pages.BasePage.swipeDown(BasePage.java:59)
-at com.shopee.pages.BasePage.scrollUpToElement(BasePage.java:48)
-at com.shopee.Assignment.ShopeeSgPage.SwipeUpandClickonSamsungoptionvertically(ShopeeSgPage.java:238)
-at com.shopee.stepdefinitions.Shopee_MainSteps.swipe_up_vertically_and_select_Samsung_then_get_the_last_active_statusshop_rating_and_Followers(Shopee_MainSteps.java:96)
-at ✽.Then Swipe up vertically and select Samsung then get the last active statusshop rating and Followers(ShopeeSg_Assignment.feature:42)
+at com.shopee.stepdefinitions.Shopee_MainSteps.swipe_up_and_select_Samsung_then_get_the_last_active_statusshop_rating_and_Followers(Shopee_MainSteps.java:89)
+at ✽.Then Swipe up and select Samsung then get the last active statusshop rating and Followers(ShopeeSg_Assignment.feature:17)
 ]]>
             </full-stacktrace>
           </exception> <!-- cucumber.runtime.CucumberException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.shopee.runner.RunCukesTest@3d680b5a]" name="tearDownClass" is-config="true" duration-ms="325" started-at="2021-11-21T07:32:36Z" finished-at="2021-11-21T07:32:36Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.shopee.runner.RunCukesTest@3d680b5a]" name="tearDownClass" is-config="true" duration-ms="431" started-at="2021-11-21T17:32:10Z" finished-at="2021-11-21T17:32:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method status="PASS" signature="stopServer()[pri:0, instance:com.shopee.runner.RunCukesTest@3d680b5a]" name="stopServer" is-config="true" duration-ms="809" started-at="2021-11-21T07:32:36Z" finished-at="2021-11-21T07:32:37Z">
+        <test-method status="PASS" signature="stopServer()[pri:0, instance:com.shopee.runner.RunCukesTest@3d680b5a]" name="stopServer" is-config="true" duration-ms="1720" started-at="2021-11-21T17:32:10Z" finished-at="2021-11-21T17:32:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopServer -->
-        <test-method status="PASS" signature="generateExtentReport()[pri:0, instance:com.shopee.runner.RunCukesTest@3d680b5a]" name="generateExtentReport" is-config="true" duration-ms="14" started-at="2021-11-21T07:32:37Z" finished-at="2021-11-21T07:32:37Z">
+        <test-method status="PASS" signature="generateExtentReport()[pri:0, instance:com.shopee.runner.RunCukesTest@3d680b5a]" name="generateExtentReport" is-config="true" duration-ms="9" started-at="2021-11-21T17:32:12Z" finished-at="2021-11-21T17:32:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateExtentReport -->

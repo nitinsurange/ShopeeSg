@@ -85,6 +85,7 @@ public class Shopee_MainSteps {
 
 	@Then("^Swipe up and select Samsung then get the last active statusshop rating and Followers$")
 	public void swipe_up_and_select_Samsung_then_get_the_last_active_statusshop_rating_and_Followers() throws Throwable {
+		Thread.sleep(30000);
 		shopee.SwipeUpandClickonSamsungoption();
 		Thread.sleep(5000);
 
@@ -117,6 +118,7 @@ public class Shopee_MainSteps {
 
 	@Then("^Get the product rating and shipping fee$")
 	public void get_the_product_rating_and_shipping_fee() throws Throwable {
+
 		shopee.getProductRatingShippingFee();
 	}
 

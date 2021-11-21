@@ -19,6 +19,7 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
@@ -223,10 +224,33 @@ public class ShopeeSgPage extends BasePage {
 	  
   public void SwipeUpandClickonSamsungoption() throws InterruptedException {
 	  
+	  waitForVisibilityOf(s, driver);
+		clickButton(s, driver);
+
+		// waitForVisibilityOf(samsung, driver);
+		Thread.sleep(15000);
+//		if(!isDisplayedAfterWait(samsung, 3)) {
+//			for(int i=0;i<=2;i++) {
+				
+		
+				  try {
+						waitForVisibilityOf(samsung, driver);
+						clickButton(samsung, driver);
+
+			        }
+			        catch (StaleElementReferenceException | TimeoutException e) {
+			        }
+//			}
+//			else {
+//				
+//		
+//		}
+		
+
 	 
-	  scrollUntilTextClick(driver, "Samsung");
-	  
-	  clickButton(samsung, driver);
+//	  scrollUntilTextClick(driver, "Samsung");
+//	  
+//	  clickButton(samsung, driver);
 	  
 //	  	scrollUpToElement(samsung, driver);
 //	  	waitForVisibilityOf(samsung, driver);
@@ -249,16 +273,19 @@ public class ShopeeSgPage extends BasePage {
   
   
 
-public void taponFilter() {
+public void taponFilter() throws InterruptedException {
 	waitForVisibilityOf(filter, driver);
 	clickButton(filter, driver);
+	Thread.sleep(5000);
 }
 
 @SuppressWarnings("rawtypes")
 public void swipeandSelectRating() throws InterruptedException {
 
-     swipefilterpage();
+     swipefilterpage(driver);
 
+     waitForAvailabilityOf(fourStarUp, driver);
+		clickButton(fourStarUp, driver);
 }
 
 public void enterPriceRange(int amount1, int amount2) {
@@ -280,18 +307,26 @@ public void getMaxPriceandClickonProduct() {
 	
 	waitForAvailabilityOf(price_filter, driver);
 	clickButton(price_filter, driver);
-	//waitForAvailabilityOf(price_filter, driver);
+	// waitForAvailabilityOf(price_filter, driver);
 	try {
-		Thread.sleep(3000);
+		Thread.sleep(6000);
 	} catch (InterruptedException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
 	clickButton(price_filter, driver);
-	
-	System.out.println("max price::"+max_price.get(1));
-	
+
 	waitForAvailabilityOf(max_price.get(1), driver);
+	try {
+		Thread.sleep(6000);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	String maxprice = getText(max_price.get(1));
+
+	System.out.println("max price::" + maxprice);
+
 	clickButton(max_price.get(1), driver);
 	
 }
@@ -313,13 +348,13 @@ public void swipeImagesuntilPagination() {
 
 }
 
-public void getProductRatingShippingFee() {
+public void getProductRatingShippingFee() throws InterruptedException {
 
 	String productRating = getText(product_Rating);
 	System.out.println("productRating:" + productRating);
 
 	swipeAndroid(driver, 550, 1943, 550, 700);
-
+    Thread.sleep(6000);
 	waitForVisibilityOf(shipping_fee, driver);
 	String ShippingFee = getText(shipping_fee);
 	System.out.println("ShippingFee:" + ShippingFee);
