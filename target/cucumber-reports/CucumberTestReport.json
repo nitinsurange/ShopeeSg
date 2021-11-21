@@ -13,7 +13,7 @@
         "before": [
           {
             "result": {
-              "duration": 14542260685,
+              "duration": 11233324175,
               "status": "passed"
             },
             "match": {
@@ -21,7 +21,7 @@
             }
           }
         ],
-        "line": 30,
+        "line": 32,
         "name": "Automate the Signup flow covering positive scenarios",
         "description": "",
         "id": "mobile-app-automation-assignment;automate-the-signup-flow-covering-positive-scenarios;;2",
@@ -30,7 +30,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5198637880,
+              "duration": 5160248143,
               "status": "passed"
             },
             "line": 9,
@@ -42,22 +42,34 @@
           },
           {
             "result": {
-              "duration": 8053069796,
+              "duration": 5840741430,
               "status": "passed"
             },
             "line": 10,
-            "name": "user Swipe through all tutorial screens and tap on START button",
+            "name": "user Swipe through all tutorial screens",
             "match": {
-              "location": "Shopee_MainSteps.user_Swipe_through_all_tutorial_screens_and_tap_on_START_button()"
+              "location": "Shopee_MainSteps.user_Swipe_through_all_tutorial_screens()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 6057565763,
+              "duration": 967384781,
               "status": "passed"
             },
             "line": 11,
+            "name": "user taps on Start button",
+            "match": {
+              "location": "Shopee_MainSteps.user_taps_on_Start_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4911143874,
+              "status": "passed"
+            },
+            "line": 12,
             "name": "user Allow permission for location if prompted",
             "match": {
               "location": "Shopee_MainSteps.user_Allow_permission_for_location_if_prompted()"
@@ -66,22 +78,22 @@
           },
           {
             "result": {
-              "duration": 10418798427,
+              "duration": 10126750661,
               "status": "passed"
             },
-            "line": 12,
-            "name": "Dismiss the Add popup in landing screen",
+            "line": 13,
+            "name": "Dismiss the Add popup on landing screen if present",
             "match": {
-              "location": "Shopee_MainSteps.dismiss_the_Add_popup_in_landing_screen()"
+              "location": "Shopee_MainSteps.dismiss_the_Add_popup_on_landing_screen_if_present()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1054781853,
+              "duration": 1673658393,
               "status": "passed"
             },
-            "line": 13,
+            "line": 14,
             "name": "user Clicks on Shopee Mall button from bottom navbar",
             "match": {
               "location": "Shopee_MainSteps.user_Clicks_on_Shopee_Mall_button_from_bottom_navbar()"
@@ -90,22 +102,22 @@
           },
           {
             "result": {
-              "duration": 11376340219,
+              "duration": 10314348089,
               "status": "passed"
             },
-            "line": 14,
-            "name": "Dismiss the Add popup in landing screen",
+            "line": 15,
+            "name": "Dismiss the Add popup on landing screen if present",
             "match": {
-              "location": "Shopee_MainSteps.dismiss_the_Add_popup_in_landing_screen()"
+              "location": "Shopee_MainSteps.dismiss_the_Add_popup_on_landing_screen_if_present()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 7293344146,
+              "duration": 3184025933,
               "status": "passed"
             },
-            "line": 15,
+            "line": 16,
             "name": "user Clicks on Mobile and Gadgets from top header menu",
             "match": {
               "location": "Shopee_MainSteps.user_Clicks_on_Mobile_and_Gadgets_from_top_header_menu()"
@@ -114,10 +126,10 @@
           },
           {
             "result": {
-              "duration": 15102312469,
+              "duration": 7021631181,
               "status": "passed"
             },
-            "line": 16,
+            "line": 17,
             "name": "user Clicks on See All for Trending Shops",
             "match": {
               "location": "Shopee_MainSteps.user_Clicks_on_See_All_for_Trending_Shops()"
@@ -126,22 +138,34 @@
           },
           {
             "result": {
-              "duration": 66313497836,
+              "duration": 21282736332,
               "status": "passed"
             },
-            "line": 17,
-            "name": "Swipe up and select Samsung then get the last active statusshop rating and Followers",
+            "line": 18,
+            "name": "user swipe up and selects the samsung shop from all trending shops",
             "match": {
-              "location": "Shopee_MainSteps.swipe_up_and_select_Samsung_then_get_the_last_active_statusshop_rating_and_Followers()"
+              "location": "Shopee_MainSteps.user_swipe_up_and_selects_the_samsung_shop_from_all_trending_shops()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 19269136028,
+              "duration": 3724763550,
               "status": "passed"
             },
-            "line": 18,
+            "line": 19,
+            "name": "user gets the last active, statusshop, rating and foloowers",
+            "match": {
+              "location": "Shopee_MainSteps.user_gets_the_last_active_statusshop_rating_and_foloowers()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 18211939358,
+              "status": "passed"
+            },
+            "line": 20,
             "name": "user Taps on Filter  then select Rating  as 4 Stars \u0026 Up  Condition as New and Prices Range as Min 500 \u0026 Max 2000",
             "match": {
               "arguments": [
@@ -164,10 +188,10 @@
           },
           {
             "result": {
-              "duration": 2419929634,
+              "duration": 1646947863,
               "status": "passed"
             },
-            "line": 19,
+            "line": 21,
             "name": "user Clicks on Apply filter",
             "match": {
               "location": "Shopee_MainSteps.user_Clicks_on_Apply_filter()"
@@ -176,11 +200,10 @@
           },
           {
             "result": {
-              "duration": 14232662264,
-              "error_message": "org.openqa.selenium.StaleElementReferenceException: Cached elements \u0027By.xpath: //android.widget.TextView[starts-with(@text, \u0027$\u0027)]\u0027 do not exist in DOM anymore\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027192.168.0.104\u0027, ip: \u0027192.168.0.104\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u00271.8.0_281\u0027\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities {appActivity: com.shopee.app.ui.home.Home..., appPackage: com.shopee.sg, automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: com.shopee.app.ui.home.Home..., appPackage: com.shopee.sg, automationName: uiautomator2, deviceName: Redmi Nitin, platformName: android, platformVersion: 10}, deviceApiLevel: 29, deviceManufacturer: Xiaomi, deviceModel: Redmi Note 7, deviceName: dc17a4f, deviceScreenDensity: 440, deviceScreenSize: 1080x2340, deviceUDID: dc17a4f, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 80, takesScreenshot: true, viewportRect: {height: 2051, left: 0, top: 80, width: 1080}, warnings: {}, webStorageEnabled: false}\nSession ID: 8c316118-bd22-42cf-b7d8-848c916d431c\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)\n\tat io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)\n\tat io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\n\tat io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)\n\tat io.appium.java_client.MobileElement.execute(MobileElement.java:1)\n\tat io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)\n\tat org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:326)\n\tat org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)\n\tat org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)\n\tat org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)\n\tat org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\n\tat com.shopee.pages.BasePage.waitForAvailabilityOf(BasePage.java:176)\n\tat com.shopee.Assignment.ShopeeSgPage.getMaxPriceandClickonProduct(ShopeeSgPage.java:319)\n\tat com.shopee.stepdefinitions.Shopee_MainSteps.user_Gets_the_Max_priced_product_from_list_and_Click_on_the_product(Shopee_MainSteps.java:111)\n\tat ✽.Then user Gets the Max priced product from list and Click on the product(ShopeeSg_Assignment.feature:20)\n",
-              "status": "failed"
+              "duration": 14955446401,
+              "status": "passed"
             },
-            "line": 20,
+            "line": 22,
             "name": "user Gets the Max priced product from list and Click on the product",
             "match": {
               "location": "Shopee_MainSteps.user_Gets_the_Max_priced_product_from_list_and_Click_on_the_product()"
@@ -189,9 +212,10 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 65834312682,
+              "status": "passed"
             },
-            "line": 21,
+            "line": 23,
             "name": "user Swipe left/right on the image preview until the pagination value reaches last page respectively",
             "match": {
               "location": "Shopee_MainSteps.user_Swipe_left_right_on_the_image_preview_until_the_pagination_value_reaches_last_page_respectively()"
@@ -200,9 +224,10 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 12040334193,
+              "status": "passed"
             },
-            "line": 22,
+            "line": 24,
             "name": "Get the product rating and shipping fee",
             "match": {
               "location": "Shopee_MainSteps.get_the_product_rating_and_shipping_fee()"
@@ -211,9 +236,10 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 5811462019,
+              "status": "passed"
             },
-            "line": 23,
+            "line": 25,
             "name": "Swipe up and Click on Sell All for From the Same Shop Similar Products",
             "match": {
               "location": "Shopee_MainSteps.swipe_up_and_Click_on_Sell_All_for_From_the_Same_Shop_Similar_Products()"
@@ -222,9 +248,10 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 279643731946,
+              "status": "passed"
             },
-            "line": 24,
+            "line": 26,
             "name": "get the min \u0026 max priced products from list",
             "match": {
               "location": "Shopee_MainSteps.get_the_min_max_priced_products_from_list()"

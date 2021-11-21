@@ -6,7 +6,6 @@ import com.shopee.pages.BasePage;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
-import io.appium.java_client.android.AndroidTouchAction;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.pagefactory.iOSXCUITFindBy;
@@ -19,11 +18,9 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
-import org.testng.asserts.SoftAssert;
+
 
 public class ShopeeSgPage extends BasePage {
 
@@ -198,20 +195,19 @@ public class ShopeeSgPage extends BasePage {
   	clickButton(mobileandgadjets, driver);
   }
   
-  public void swipeformobilegadgets() throws InterruptedException {
+  @SuppressWarnings("rawtypes")
+public void swipeformobilegadgets() throws InterruptedException {
 	  
 	  Thread.sleep(2000);	
 	  if(isDisplayedAfterWait(mobileandgadjets, 2)==false) {
 		  (new TouchAction(driver)).press(PointOption.point(863,346))
 			.waitAction(WaitOptions.waitOptions(Duration.ofMillis(300)))
 			.moveTo(PointOption.point(235,350)).release().perform();
-//		  swipelefthorizontaluntilmobilegadgets();
 		    
 	  }else {
 		  (new TouchAction(driver)).press(PointOption.point(863,346))
 			.waitAction(WaitOptions.waitOptions(Duration.ofMillis(300)))
 			.moveTo(PointOption.point(235,350)).release().perform();
-//		  swipelefthorizontaluntilmobilegadgets(); 
 	  }
 
 	  }
@@ -259,7 +255,6 @@ public void taponFilter() throws InterruptedException {
 	Thread.sleep(5000);
 }
 
-@SuppressWarnings("rawtypes")
 public void swipeandSelectRating() throws InterruptedException {
 
      swipefilterpage(driver);

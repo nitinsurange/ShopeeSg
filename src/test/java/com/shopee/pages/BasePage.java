@@ -6,8 +6,6 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidTouchAction;
 import io.appium.java_client.ios.IOSTouchAction;
-import io.appium.java_client.pagefactory.AndroidFindBy;
-import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.*;
@@ -20,6 +18,7 @@ import com.shopee.Assignment.ShopeeSgPage;
 import java.time.Duration;
 
 public class BasePage {
+	@SuppressWarnings("rawtypes")
 	protected static AppiumDriver driver;
 
 	public void swipeLeft(@SuppressWarnings("rawtypes") AppiumDriver driver) {
