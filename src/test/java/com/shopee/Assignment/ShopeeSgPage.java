@@ -14,6 +14,7 @@ import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.TimeoutException;
@@ -74,7 +75,33 @@ public class ShopeeSgPage extends BasePage {
     
     @AndroidFindBy(xpath="//android.view.View[@content-desc=\"REGISTER\"]")
 	public static MobileElement TrendingShopPage;
+    
+    @AndroidFindBy(xpath = "//android.widget.TextView[starts-with(@text, 'Active')]")
+    private MobileElement active;
+    
+    @AndroidFindBy(xpath = "//android.widget.TextView[ends-with(@text, '/ 5.0')]")
+    private MobileElement shop_Rating;
+    
+    @AndroidFindBy(xpath = "//android.widget.TextView[@text = 'Filter']")
+    private MobileElement filter;
    
+    @AndroidFindBy(xpath = "//android.widget.TextView[@text = '4 Stars & Up']")
+    private MobileElement fourStarUp;
+    
+    @AndroidFindBy(xpath = "//android.widget.EditText[@text = 'MIN']")
+    private MobileElement minPrice;
+    
+    @AndroidFindBy(xpath = "//android.widget.EditText[@text = 'MAX']")
+    private MobileElement maxPrice;
+    
+    @AndroidFindBy(xpath = "//android.widget.TextView[@text = 'Apply']")
+    private MobileElement apply_Btn;
+    
+    @AndroidFindBy(xpath ="//android.widget.TextView[@text = 'Price']")
+    private MobileElement price_filter;
+    
+    @AndroidFindBy(xpath = "//android.widget.TextView[starts-with(@text, '$')]")
+    private List<MobileElement> max_price;
     
     public boolean checkForSignupPage()
     {
@@ -89,10 +116,16 @@ public class ShopeeSgPage extends BasePage {
     }
     
  public void SwipeLeftuntilstrtbutton() {
-	 for(int i=0;i<=2;i++){  
-			new AndroidTouchAction(driver).press(PointOption.point(1030, 1464))
-			.waitAction(WaitOptions.waitOptions(Duration.ofSeconds(2))).moveTo(PointOption.point(80, 1428))
-			.release();	 } 
+	 
+ 	 for(int i=0;i<=2;i++){  
+		 swipeRight(driver);
+ 	 } 
+
+//	 for(int i=0;i<=2;i++){  
+//			new AndroidTouchAction(driver).press(PointOption.point(1030, 1464))
+//			.waitAction(WaitOptions.waitOptions(Duration.ofSeconds(2))).moveTo(PointOption.point(80, 1428))
+//			.release();	
+//			} 
 	 }
     
     public void clickonStartButton() {
@@ -140,11 +173,85 @@ public class ShopeeSgPage extends BasePage {
 	  }
 	  
   public void SwipeUpandClickonSamsungoption() throws InterruptedException {
-	  	
-	  	
-	  	scrollUpToElement(samsung, driver);
-	  	waitForVisibilityOf(samsung, driver);
-	  	clickButton(samsung, driver);
+	  
+	 
+	  scrollUntilTextClick(driver, "Samsung");
+	  
+	  clickButton(samsung, driver);
+	  
+//	  	scrollUpToElement(samsung, driver);
+//	  	waitForVisibilityOf(samsung, driver);
+//	  	clickButton(samsung, driver);
+
+	  
+	 // get the 'last active status', 'shop rating' and 'Followers'
+	  
+	  String last_Active_Status = getText(active);
+	  
+	  String shopRating = getText(shop_Rating);
+	  
+	  System.out.println("last_Active_Status:"+last_Active_Status);
+	  
+	  System.out.println("shopRating:"+shopRating);
+	  
+	 
+	  
 	  }
-  
+
+public void taponFilter() {
+	waitForVisibilityOf(filter, driver);
+	clickButton(filter, driver);
+}
+
+public void swipeandSelectRating() {
+	
+	 //swipeAndroid(driver, 600, 1600, 600, 750);
+	 
+	 
+	 waitForAvailabilityOf(fourStarUp, driver);
+	 clickButton(fourStarUp, driver);
+}
+
+public void enterPriceRange(int amount1, int amount2) {
+
+	waitForVisibilityOf(minPrice, driver);
+	
+	inputText(String.valueOf(amount1), minPrice, driver);
+	
+	inputText(String.valueOf(amount2), maxPrice, driver);
+	
+}
+
+public void clickonApply() {
+	clickButton(apply_Btn, driver);
+	
+}
+
+public void getMaxPriceandClickonProduct() {
+	
+	waitForAvailabilityOf(price_filter, driver);
+	clickButton(price_filter, driver);
+	//waitForAvailabilityOf(price_filter, driver);
+	try {
+		Thread.sleep(3000);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	clickButton(price_filter, driver);
+	
+	System.out.println("max price::"+max_price.get(1));
+	
+	waitForAvailabilityOf(max_price.get(1), driver);
+	clickButton(max_price.get(1), driver);
+	
+}
+
+
+
+
+
+
+
+
 }

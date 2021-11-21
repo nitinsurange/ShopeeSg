@@ -61,7 +61,7 @@ public class Shopee_MainSteps {
 
 	@Then("^user Clicks on Mobile and Gadgets from top header menu$")
 	public void user_Clicks_on_Mobile_and_Gadgets_from_top_header_menu() throws Throwable {
-		shopee.DropDownbuttonShopeemallpage();
+		//shopee.DropDownbuttonShopeemallpage();
 		shopee.ClickonmobileGadjets();
 	}
 
@@ -77,17 +77,19 @@ public class Shopee_MainSteps {
 
 	@Then("^user Taps on Filter  then select Rating  as (\\d+) Stars & Up  Condition as New and Prices Range as Min (\\d+) & Max (\\d+)$")
 	public void user_Taps_on_Filter_then_select_Rating_as_Stars_Up_Condition_as_New_and_Prices_Range_as_Min_Max(int arg1, int arg2, int arg3) throws Throwable {
-	 
+		shopee.taponFilter();
+		shopee.swipeandSelectRating();
+		shopee.enterPriceRange( arg2,  arg3);
 	}
 
 	@Then("^user Clicks on Apply filter$")
 	public void user_Clicks_on_Apply_filter() throws Throwable {
-	  
+		shopee.clickonApply();
 	}
 
 	@Then("^user Gets the Max priced product from list and Click on the product$")
 	public void user_Gets_the_Max_priced_product_from_list_and_Click_on_the_product() throws Throwable {
-	  
+		shopee.getMaxPriceandClickonProduct();
 	}
 
 	@Then("^user Swipe left/right on the image preview until the pagination value reaches last page respectively$")

@@ -1,6 +1,7 @@
 package com.shopee.pages;
 
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidTouchAction;
 import io.appium.java_client.ios.IOSTouchAction;
@@ -200,6 +201,31 @@ public class BasePage {
     }
 
 
-	
+    public void swipeRight(@SuppressWarnings("rawtypes") AppiumDriver driver) {
+		Dimension size = driver.manage().window().getSize();
+		int startx = (int) (size.width * 0.9);
+		int endx = (int) (size.width * 0.20);
+		int starty = size.height / 2;
+		if (System.getProperty("platform").equalsIgnoreCase("android")) {
+			new AndroidTouchAction(driver).press(PointOption.point(startx, starty))
+					.waitAction(WaitOptions.waitOptions(Duration.ofSeconds(2))).moveTo(PointOption.point(endx, starty))
+					.release().perform();
+		} else {
+			new IOSTouchAction(driver).press(PointOption.point(startx, starty))
+					.waitAction(WaitOptions.waitOptions(Duration.ofSeconds(2))).moveTo(PointOption.point(endx, starty))
+					.release().perform();
+		}
+	}
+    
+public void scrollUntilTextClick(AppiumDriver driver, String elementText) {
+		
+		driver.findElement(MobileBy.AndroidUIAutomator(
+				"new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\""
+						+ elementText + "\").instance(0))"))
+				.click();
+		;
+
+	}
+
 
 }

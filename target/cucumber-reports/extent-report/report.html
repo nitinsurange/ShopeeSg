@@ -34,7 +34,6 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
@@ -48,7 +47,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Nov 20, 2021 05:48:03 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Nov 21, 2021 09:00:27 AM</span>
 				</a>
 			</li>
 			<li>
@@ -74,7 +73,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 						<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
@@ -139,7 +137,7 @@
 					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> others
 				</div>
 			</div>
 		</div>
@@ -154,7 +152,7 @@
 					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> others
 				</div>
 			</div>
 		</div>
@@ -166,10 +164,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='46.667%'><span class='strong'>7</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='6.667%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='46.667%'>7</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='100%'>15</span> others
 				</div>
 			</div>
 		</div>
@@ -183,21 +181,21 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf skip' status='skip' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Mobile App automation assignment</span>
-						<span class='test-time'>Nov 20, 2021 05:48:03 PM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-time'>Nov 21, 2021 09:00:27 AM</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 					<div class='test-content hide'>
-<div class='scenariooutline node' test-id='2' status='fail'>
-	<span class='duration right label'>0h 1m 11s+753ms</span>
+<div class='scenariooutline node' test-id='2' status='skip'>
+	<span class='duration right label'>0h 0m 1s+83ms</span>
 	<div class='desc'>
 		<b>ScenarioOutline</b>
 		<span class="desc-text">Automate the Signup flow covering positive scenarios</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='3' class='node scenario fail' status='fail'>
+		<li test-id='3' class='node scenario skip' status='skip'>
 			<div class='category-list'>
 				<span class='category label white-text'>@ShopeeAssigment</span>
 			</div>
@@ -207,64 +205,37 @@
 			<span class="bdd-step-name">Automate the Signup flow covering positive scenarios</span>
 			
 				<ul class='steps'>
-					<li test-id='4' class='node given pass' status='pass'><b>Given</b>
+					<li test-id='4' class='node given skip' status='skip'><b>Given</b>
 						<span class="bdd-step-name">Given user lanuch Shopee SG app</span>
-							<div class='pre'>passed</div>
+							<div class='pre'>skipped</div>
 					</li>
-					<li test-id='5' class='node then pass' status='pass'><b>Then</b>
+					<li test-id='5' class='node then skip' status='skip'><b>Then</b>
 						<span class="bdd-step-name">Then user Swipe through all tutorial screens and tap on START button</span>
-							<div class='pre'>passed</div>
+							<div class='pre'>skipped</div>
 					</li>
-					<li test-id='6' class='node given pass' status='pass'><b>Given</b>
+					<li test-id='6' class='node given skip' status='skip'><b>Given</b>
 						<span class="bdd-step-name">Given user Allow permission for location if prompted</span>
-							<div class='pre'>passed</div>
+							<div class='pre'>skipped</div>
 					</li>
-					<li test-id='7' class='node then pass' status='pass'><b>Then</b>
+					<li test-id='7' class='node then skip' status='skip'><b>Then</b>
 						<span class="bdd-step-name">Then Dismiss the Add popup in landing screen</span>
-							<div class='pre'>passed</div>
+							<div class='pre'>skipped</div>
 					</li>
-					<li test-id='8' class='node then pass' status='pass'><b>Then</b>
+					<li test-id='8' class='node then skip' status='skip'><b>Then</b>
 						<span class="bdd-step-name">Then user Clicks on Shopee Mall button from bottom navbar</span>
-							<div class='pre'>passed</div>
+							<div class='pre'>skipped</div>
 					</li>
-					<li test-id='9' class='node then pass' status='pass'><b>Then</b>
+					<li test-id='9' class='node then skip' status='skip'><b>Then</b>
 						<span class="bdd-step-name">Then user Clicks on Mobile and Gadgets from top header menu</span>
-							<div class='pre'>passed</div>
+							<div class='pre'>skipped</div>
 					</li>
-					<li test-id='10' class='node then pass' status='pass'><b>Then</b>
+					<li test-id='10' class='node then skip' status='skip'><b>Then</b>
 						<span class="bdd-step-name">Then user Clicks on See All for Trending Shops</span>
-							<div class='pre'>passed</div>
+							<div class='pre'>skipped</div>
 					</li>
-					<li test-id='11' class='node then fail' status='fail'><b>Then</b>
+					<li test-id='11' class='node then skip' status='skip'><b>Then</b>
 						<span class="bdd-step-name">Then Swipe up and select Samsung then get the last active statusshop rating and Followers</span>
-							<div class='pre'><pre>org.openqa.selenium.InvalidElementStateException: Swipe action cannot be performed
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: '192.168.0.104', ip: '192.168.0.104', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_281'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.shopee.app.ui.home.Home..., appPackage: com.shopee.sg, automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: com.shopee.app.ui.home.Home..., appPackage: com.shopee.sg, automationName: uiautomator2, deviceName: Redmi Nitin, platformName: android, platformVersion: 10}, deviceApiLevel: 29, deviceManufacturer: Xiaomi, deviceModel: Redmi Note 7, deviceName: dc17a4f, deviceScreenDensity: 440, deviceScreenSize: 1080x2340, deviceUDID: dc17a4f, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 80, takesScreenshot: true, viewportRect: {height: 2051, left: 0, top: 80, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: b1bceaea-b779-4b1c-ad5f-4cb9f823639d
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at io.appium.java_client.PerformsTouchActions.performTouchAction(PerformsTouchActions.java:41)
-	at io.appium.java_client.TouchAction.perform(TouchAction.java:187)
-	at com.shopee.pages.BasePage.swipeAndroid(BasePage.java:106)
-	at com.shopee.pages.BasePage.swipeUp(BasePage.java:96)
-	at com.shopee.pages.BasePage.scrollUpToElement(BasePage.java:46)
-	at com.shopee.Assignment.ShopeeSgPage.SwipeUpandClickonSamsungoption(ShopeeSgPage.java:145)
-	at com.shopee.stepdefinitions.Shopee_MainSteps.swipe_up_and_select_Samsung_then_get_the_last_active_statusshop_rating_and_Followers(Shopee_MainSteps.java:75)
-	at ✽.Then Swipe up and select Samsung then get the last active statusshop rating and Followers(ShopeeSg_Assignment.feature:16)
-</pre></div>
+							<div class='pre'>skipped</div>
 					</li>
 					<li test-id='12' class='node then skip' status='skip'><b>Then</b>
 						<span class="bdd-step-name">Then user Taps on Filter  then select Rating  as 4 Stars & Up  Condition as New and Prices Range as Min 500 & Max 2000</span>
@@ -354,14 +325,14 @@ Session ID: b1bceaea-b779-4b1c-ad5f-4cb9f823639d
 					<div class='category-heading'>
 						<span class='category-name'>@ShopeeAssigment</span>
 						<span class='category-status right'>
-							<span class='label fail'>1</span>
+							<span class='label others'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
 							
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
+							<span class='label yellow darken-2 white-text'>Others: 1</span>
 						</div>
 					
 						<div class='category-tests'>
@@ -375,9 +346,9 @@ Session ID: b1bceaea-b779-4b1c-ad5f-4cb9f823639d
 								</thead>
 								<tbody>
 									<tr>
-										<td>Nov 20, 2021 05:48:03 PM</td>
+										<td>Nov 21, 2021 09:00:27 AM</td>
 										<td class='linked' test-id='3'>Mobile App automation assignment.Automate the Signup flow covering positive scenarios.Automate the Signup flow covering positive scenarios</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status skip'>skip</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -396,94 +367,6 @@ Session ID: b1bceaea-b779-4b1c-ad5f-4cb9f823639d
 	</div>
 </div>
 <!-- category view -->
-<div id='exception-view' class='view hide'>
-
-    <section id='controls'>
-        <div class='controls grey lighten-4'>
-            <!-- search -->
-            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
-                <a href="#" class='search-div'>
-                    <i class='material-icons'>search</i> Search
-                </a>
-
-                <div class='input-field left hide'>
-                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-                </div>
-
-            </div>
-            <!-- search -->
-        </div>
-    </section>
-
-    <div class='subview-left left'>
-
-        <div class='view-summary'>
-            <h5>Exceptions</h3>
-                <ul id='exception-collection' class='exception-collection'>
-
-                        <li class='exception displayed active'>
-                            <div class='exception-heading'>
-                                <span class='exception-name'>org.openqa.selenium.InvalidElementStateException</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-                            </div>
-                            <div class='exception-content hide'>
-                                <div class='exception-tests'>
-                                    <table class='bordered table-results'>
-                                        <thead>
-                                        <tr>
-                                            <th>Timestamp</th>
-                                            <th>TestName</th>
-                                            <th>Status</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                                    <tr>
-                                                        <td>Nov 20, 2021 05:49:13 PM</td>
-                                                        <td class='linked' test-id='11'>Mobile App automation assignment.Automate the Signup flow covering positive scenarios.Automate the Signup flow covering positive scenarios.Then Swipe up and select Samsung then get the last active statusshop rating and Followers</td>
-                                                        <td><pre><pre>org.openqa.selenium.InvalidElementStateException: Swipe action cannot be performed
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: '192.168.0.104', ip: '192.168.0.104', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_281'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.shopee.app.ui.home.Home..., appPackage: com.shopee.sg, automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: com.shopee.app.ui.home.Home..., appPackage: com.shopee.sg, automationName: uiautomator2, deviceName: Redmi Nitin, platformName: android, platformVersion: 10}, deviceApiLevel: 29, deviceManufacturer: Xiaomi, deviceModel: Redmi Note 7, deviceName: dc17a4f, deviceScreenDensity: 440, deviceScreenSize: 1080x2340, deviceUDID: dc17a4f, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 80, takesScreenshot: true, viewportRect: {height: 2051, left: 0, top: 80, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: b1bceaea-b779-4b1c-ad5f-4cb9f823639d
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at io.appium.java_client.PerformsTouchActions.performTouchAction(PerformsTouchActions.java:41)
-	at io.appium.java_client.TouchAction.perform(TouchAction.java:187)
-	at com.shopee.pages.BasePage.swipeAndroid(BasePage.java:106)
-	at com.shopee.pages.BasePage.swipeUp(BasePage.java:96)
-	at com.shopee.pages.BasePage.scrollUpToElement(BasePage.java:46)
-	at com.shopee.Assignment.ShopeeSgPage.SwipeUpandClickonSamsungoption(ShopeeSgPage.java:145)
-	at com.shopee.stepdefinitions.Shopee_MainSteps.swipe_up_and_select_Samsung_then_get_the_last_active_statusshop_rating_and_Followers(Shopee_MainSteps.java:75)
-	at ✽.Then Swipe up and select Samsung then get the last active statusshop rating and Followers(ShopeeSg_Assignment.feature:16)
-</pre></pre></td>
-                                                    </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </li>
-                </ul>
-        </div>
-    </div>
-
-    <div class='subview-right left'>
-        <div class='view-summary'>
-            <h5 class='exception-name'></h5>
-        </div>
-    </div>
-</div>
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -511,19 +394,19 @@ Session ID: b1bceaea-b779-4b1c-ad5f-4cb9f823639d
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Nov 20, 2021 05:48:03 PM</div>
+					<div class='panel-lead'>Nov 21, 2021 09:00:27 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Nov 20, 2021 05:49:15 PM</div>
+			 		<div class='panel-lead'>Nov 21, 2021 09:00:28 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>72,000ms</div>
+					<div class='panel-lead'>1,291ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -541,8 +424,8 @@ Session ID: b1bceaea-b779-4b1c-ad5f-4cb9f823639d
 						<tr>
 							<td>@ShopeeAssigment</td>
 							<td>0</td>
-							<td>1</td>
 							<td>0</td>
+							<td>1</td>
 							<td>
 									0%
 							</td>
@@ -561,30 +444,30 @@ Session ID: b1bceaea-b779-4b1c-ad5f-4cb9f823639d
 		<script>
 			var statusGroup = {
 				passParent: 0,
-				failParent: 1,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
-				skipParent: 0,
+				skipParent: 1,
 				exceptionsParent: 1,
 				
 				passChild: 0,
-				failChild: 1,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
-				skipChild: 0,
+				skipChild: 1,
 				infoChild: 0,
 				exceptionsChild: 1,
 				
-				passGrandChild: 7,
-				failGrandChild: 1,
+				passGrandChild: 0,
+				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 7,
+				skipGrandChild: 15,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 8,
+				exceptionsGrandChild: 15,
 			};
 		</script>
 		
